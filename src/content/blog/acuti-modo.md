@@ -6,7 +6,7 @@ description: Employee turnover is a challenge faced by businesses across all
   can also incur significant costs in terms of recruitment, training, and lost
   productivity.
 author: Coby Orr
-date: 2023-06-08T15:26:46.705Z
+date: 2024-03-26T20:53:39.164Z
 tags:
   - recruitment
   - retention
