@@ -7,7 +7,7 @@ description: The job market is undergoing a transformation, driven by rapid
   leading companies. At Good Labor Jobs, we're not just observers of this
   transformation; we're active participants shaping the future of work.
 author: Coby Orr
-date: 2024-03-26T14:24:08.385Z
+date: 2024-02-14T21:54:00.000Z
 tags:
   - staffing
   - job
