@@ -9,7 +9,7 @@ description: In an ever-evolving job market where industries like manufacturing
   the needs of both employers and employees with unparalleled dedication and
   expertise.
 author: Coby Orr
-date: 2023-06-08T15:27:34.591Z
+date: 2024-02-23T21:54:00.000Z
 tags:
   - temporary labor
   - manufacturing
