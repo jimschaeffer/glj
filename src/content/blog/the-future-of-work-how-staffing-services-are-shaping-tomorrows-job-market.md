@@ -1,5 +1,5 @@
 ---
-title: "The Future of Work: How Staffing Services Are Shaping Tomorrow's Job Market"
+title: The Future of Work - How Staffing Services Are Shaping Tomorrow's Job Market
 description: we explore the evolving landscape of the job market and the pivotal
   role staffing services play in shaping the future of work. Discover how Good
   Labor Jobs is at the forefront of connecting talented individuals with
