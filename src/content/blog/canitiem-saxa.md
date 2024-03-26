@@ -8,7 +8,7 @@ description: Effective onboarding is a crucial step in ensuring the success and
   successful onboarding, setting the stage for a positive and productive
   employee journey.
 author: Coby Orr
-date: 2023-06-08T15:28:08.486Z
+date: 2024-02-20T21:54:00.000Z
 tags:
   - employees
   - onboarding
