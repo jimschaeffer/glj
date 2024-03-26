@@ -1,349 +1,1251 @@
 ---
-title: 'Pixel Perfect Websites'
-description: 'Meta description for the page'
-preloadImg: '/assets/images/landing.jpg'
+title: "Good Labor Jobs | Move In. Move Up. Move Forward."
+description: "Find rewarding labor jobs and career opportunities at Good Labor Jobs."
 permalink: '/'
 eleventyNavigation:
-  key: Home
-  order: 100
+    key: 'Home'
+    order: '100'
 ---
 
-{% extends "layouts/base.html" %}
-
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/local.css" />
-    <link rel="stylesheet" href="/assets/css/critical.css" />
+<link rel="stylesheet" href="/assets/css/local.css" />
+{% endblock %} {% extends 'layouts/base.html' %} {% block body %}
 
-    <!-- Script for Netlify Identity -->
-    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script defer>
-        if (window.netlifyIdentity) {
-            window
-                .netlifyIdentity
-                .on('init', (user) => {
-                    if (!user) {
-                        window
-                            .netlifyIdentity
-                            .on('login', () => {
-                                document.location.href = '/admin/';
-                            });
-                    }
-                });
-        }
-    </script>
-{% endblock %}
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
 
-{% block body %}
+<section id="hero-1618">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper">
+        Move In. Move Up. Move Forward.
+        <svg
+          class="cs-chevron"
+          width="49"
+          height="15"
+          viewBox="0 0 49 15"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g opacity="0.7">
+            <path
+              d="M48.3781 7.49889L42.5974 15L38.657 15L44.4377 7.49889L38.657 -4.2492e-07L42.5974 -2.52681e-07L48.3781 7.49889Z"
+              fill="var(--chevronColor)"
+            />
+            <path
+              d="M41.3781 7.49889L35.5974 15L31.657 15L37.4377 7.49889L31.657 -4.2492e-07L35.5974 -2.52681e-07L41.3781 7.49889Z"
+              fill="var(--chevronColor)"
+            />
+            <path
+              d="M34.2211 7.49889L28.4404 15L24.5 15L30.2807 7.49889L24.5 -4.2492e-07L28.4404 -2.52681e-07L34.2211 7.49889Z"
+              fill="var(--chevronColor)"
+            />
+            <path
+              d="M26.2211 7.49889L20.4404 15L16.5 15L22.2807 7.49889L16.5 -4.2492e-07L20.4404 -2.52681e-07L26.2211 7.49889Z"
+              fill="var(--chevronColor)"
+            />
+            <path
+              d="M18.2211 7.49889L12.4404 15L8.50004 15L14.2807 7.49889L8.50004 -4.2492e-07L12.4404 -2.52681e-07L18.2211 7.49889Z"
+              fill="var(--chevronColor)"
+            />
+            <path
+              d="M10.2211 7.49889L4.4404 15L0.500041 15L6.28071 7.49889L0.500042 -4.2492e-07L4.4404 -2.52681e-07L10.2211 7.49889Z"
+              fill="var(--chevronColor)"
+            />
+          </g>
+        </svg>
+      </span>
+      <h1 class="cs-title">
+        Connecting Puerto Rican Laborers With Quality Employment Opportunities
+      </h1>
+      <a href="/jobs" class="cs-button-solid">Access Job Portal</a>
+    </div>
+    <ul class="cs-card-group">
+      <li class="cs-item">
+        <img
+          class="cs-icon"
+          loading="lazy"
+          decoding="async"
+          src="assets/svgs/move-in.svg"
+          alt="icon"
+          width="48"
+          height="48"
+        />
+        <h3 class="cs-h3">Move In.</h3>
+        <p class="cs-item-text">
+          Begin your journey with us and find your place in industries that value your work. We recruit, arrange housing, transportation, payroll, and more.
+        </p>
+      </li>
+      <li class="cs-item">
+        <img
+          class="cs-icon"
+          loading="lazy"
+          decoding="async"
+          src="assets/svgs/move-up.svg"
+          alt="icon"
+          width="48"
+          height="48"
+        />
+        <h3 class="cs-h3">Move Up.</h3>
+        <p class="cs-item-text">
+          Advance your career through our vast network of employers seeking your skills. We create a work environment that exceeds expectations.
+        </p>
+      </li>
+      <li class="cs-item">
+        <img
+          class="cs-icon"
+          loading="lazy"
+          decoding="async"
+          src="assets/svgs/move-forward.svg"
+          alt="icon"
+          width="48"
+          height="48"
+        />
+        <h3 class="cs-h3">Move Forward.</h3>
+        <p class="cs-item-text">
+          Progress towards your goals with opportunities that foster growth and stability. Dedicated employees succeed in their jobs and thrive in their careers.
+        </p>
+      </li>
+    </ul>
+  </div>
 
-    <!-- ============================================ -->
-    <!--                    Hero                      -->
-    <!-- ============================================ -->
+  <!-- Background Image, there's a background image in the CSS for the parallax effect you'll need to change as well if you swap out our images -->
+  <picture class="cs-background">
+    <source
+      media="(max-width: 600px)"
+      srcset="assets/images/construction-workers-measuring-m.jpg"
+    />
+    <source
+      media="(min-width: 601px)"
+      srcset="assets/images/construction-workers-measuring.jpg"
+    />
+    <img
+      decoding="async"
+      src="assets/images/construction-workers-measuring.jpg"
+      alt="Construction Workers Measuring"
+      width="2250"
+      height="1500"
+      aria-hidden="true"
+    />
+  </picture>
+</section>
 
-    <section id="hero">
-        <div class="cs-container">
-            <div class="cs-flex-group">
-                <span class="cs-topper">mountain hiking society</span>
-                <h1 class="cs-title">Explore the World with Exciting People</h1>
-                <p class="cs-text">
-                    Tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius. Nibh tortor id aliquet lectus proin nibh condimentum.
-                </p>
-                <a href="/about" class="cs-button-solid">Explore More</a>
-                <a href="/contact" class="cs-button-transparent">
-                    <img
-                    class="cs-img"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg"
-                    alt="play icon"
-                    width="17"
-                    height="17" />
-                    Get in Touch
-                </a>
-            </div>
-        </div>
+<!-- ============================================ -->
+<!--                  About                    -->
+<!-- ============================================ -->
 
-        <!-- Background Image -->
+<section id="services-1666">
+  <div class="cs-container">
+    <div class="cs-image-group">
+      <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source
+          media="(max-width: 600px)"
+          srcset="/assets/images/about-us-construction-worker.webp"
+        />
+        <!--Tablet and above Image-->
+        <source
+          media="(min-width: 601px)"
+          srcset="/assets/images/about-us-construction-worker.webp"
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="/assets/images/about-us-construction-worker.webp"
+          alt="Construction Worker"
+          width="605"
+          height="690"
+        />
+      </picture>
+      <!--SVG Graphic-->
+      <img
+        class="cs-floater"
+        src="assets/images/opaque-logo.png"
+        alt="graphic"
+        loading="lazy"
+        decoding="async"
+        height="710"
+        aria-hidden="true"
+        width="690"
+      />
+    </div>
+    <div class="cs-content">
+      <span class="cs-topper">About Us</span>
+      <h2 class="cs-title">Pioneers in Puerto Rican Staffing Solutions</h2>
+      <p class="cs-text">
+        Welcome to Good Labor Jobs, your trusted partner in connecting Puerto
+        Rican laborers with quality employment opportunities in the United
+        States. For over 20 years we have staffed employees at
+        multibillion-dollar industrial factories to mom and pop landscaping,
+        construction, and hospitality companies. Our cost-effective service and
+        consultative expertise make us the preferred choice for businesses of
+        every size.
+      </p>
+      <p class="cs-text">
+        Whether you're a large industrial factory or a small landscaping
+        business, we offer a full variety of staffing and hiring options
+        tailored to companies of any size in any city. Our proprietary
+        recruiting pipeline, superior service, and integrated business solutions
+        ensure we meet the unique needs of your business.
+      </p>
+      <p class="cs-text">
+      <ul id="list-1165" class="cs-ul">
+        <li class="cs-li">Cost-effective Service</li>
+        <li class="cs-li">Consultative Experience</li>
+        <li class="cs-li">Integrated Business Solutions</li>
+        <li class="cs-li">Proprietary Recruiting Pipeline</li>
+        <li class="cs-li">Variety of Staffing and Hiring Options</li>
+        <a href="/contact" class="cs-button-solid">Contact Us Today</a>
+      </ul></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                    Services                  -->
+<!-- ============================================ -->
+
+<section id="services-1329">
+  <div class="cs-container">
+      <div class="cs-content">
+          <div class="cs-flex-group">
+              <span class="cs-topper">Our Services</span>
+              <h2 class="cs-title">Partner With Good Labor Jobs</h2>
+          </div>
+          <p class="cs-text">
+            We are your comprehensive solution for payroll, compliance, and risk management services. Our commitment is to provide seamless support to startups, staffing companies, and employers, allowing them to focus on their core business while we handle the intricacies of workforce management.
+          </p>
+      </div>
+      <ul class="cs-card-group">
+          <li class="cs-item">
+              <a href="/jobs" class="cs-link">
+                  <span class="cs-number">01</span>
+                  <h3 class="cs-h3">Direct Hire Services</h3>
+                  <p class="cs-item-text">
+                    We cater to individuals of all skill levels, offering positions in landscaping, construction, hospitality, and more.
+                  </p>
+              </a>
+              <picture class="cs-picture">
+                  <source media="(max-width: 600px)"
+                          srcset="/assets/images/direct-hire-services-housekeeping.webp">
+                  <source media="(min-width: 601px)"
+                          srcset="/assets/images/direct-hire-services-housekeeping.webp">
+                  <img decoding="async"
+                          src="/assets/images/direct-hire-services-housekeeping.webp"
+                          alt="Direct Hire Services" width="413" height="374" aria-hidden="true">
+              </picture>
+              <!--On Hover Image-->
+              <img class="cs-arrow" loading="lazy" decoding="async" src="/assets/images/opaque-logo-2.png" alt="Good Labor Jobs Logo" width="412" height="249" aria-hidden="true">
+          </li>
+          <li class="cs-item">
+              <a href="/services" class="cs-link">
+                  <span class="cs-number">02</span>
+                  <h3 class="cs-h3">Staffing Services</h3>
+                  <p class="cs-item-text">
+                    We provide support to startups, staffing companies, and employers, allowing them to focus on their core business.
+                  </p>
+              </a>
+              <picture class="cs-picture">
+                  <source media="(max-width: 600px)"
+                          srcset="/assets/images/staffing-services-machine-operation.webp">
+                  <source media="(min-width: 601px)"
+                          srcset="/assets/images/staffing-services-machine-operation.webp">
+                  <img decoding="async"
+                          src="/assets/images/staffing-services-machine-operation.webp"
+                          alt="Staffing Services" width="413" height="374" aria-hidden="true">
+              </picture>
+              <!--On Hover Image-->
+              <img class="cs-arrow" loading="lazy" decoding="async" src="/assets/images/opaque-logo-2.png" alt="Good Labor Jobs Logo" width="412" height="249" aria-hidden="true">
+          </li>
+          <li class="cs-item">
+              <a href="/services" class="cs-link">
+                  <span class="cs-number">03</span>
+                  <h3 class="cs-h3">Five-Year Plan</h3>
+                  <p class="cs-item-text">
+                    Allow us to provide your company with support, kick-starting our relationship as a comprehensive solution for your needs.
+                  </p>
+              </a>
+              <picture class="cs-picture">
+                  <source media="(max-width: 600px)"
+                          srcset="/assets/images/five-year-plan.webp">
+                  <source media="(min-width: 601px)"
+                          srcset="/assets/images/five-year-plan.webp">
+                  <img decoding="async"
+                          src="/assets/images/five-year-plan.webp"
+                          alt="Five-Year-Plan" width="413" height="374" aria-hidden="true">
+              </picture>
+              <!--On Hover Image-->
+              <img class="cs-arrow" loading="lazy" decoding="async" src="/assets/images/opaque-logo-2.png" alt="Good Labor Jobs Logo" width="412" height="249" aria-hidden="true">
+          </li>
+      </ul>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Steps                      -->
+<!-- ============================================ -->
+
+<section id="steps-1172">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper">Our Process</span>
+      <h2 class="cs-title">Navigating Your Path to Success</h2>
+      <p class="cs-text">
+        At Good Labor Jobs, we understand the importance of finding not just any job, but the right job. Our meticulous four-step process is designed to ensure that each individual is matched with opportunities that align with their skills, aspirations, and values. Here’s how we connect you to your next opportunity.
+      </p>
+    </div>
+    <ul class="cs-card-group">
+      <li class="cs-item">
         <picture class="cs-picture">
-            <source media="(max-width: 600px)" srcset="/assets/images/landing-m.webp">
-            <source media="(min-width: 601px)" srcset="/assets/images/landing.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/landing.jpg" alt="new home" width="2500" height="1667" loading="eager">
+          <img
+            class="cs-icon"
+            loading="lazy"
+            decoding="async"
+            src="assets/svgs/discovery.svg"
+            alt="icon"
+            width="48"
+            height="48"
+          />
         </picture>
-    </section>
+        <h2 class="cs-h3">1. Discovery</h2>
+        <p class="cs-item-text">
+          We begin by understanding your skills, needs, and career aspirations.
+        </p>
+      </li>
 
-    <!-- ============================================ -->
-    <!--                  Services                    -->
-    <!-- ============================================ -->
+      <li class="cs-item">
+        <picture class="cs-picture">
+          <img
+            class="cs-icon"
+            loading="lazy"
+            decoding="async"
+            src="assets/svgs/matching.svg"
+            alt="icon"
+            width="48"
+            height="48"
+          />
+        </picture>
+        <h2 class="cs-h3">2. Matching</h2>
+        <p class="cs-item-text">
+          Utilizing our proprietary pipeline, we find the job that fits you perfectly.
+        </p>
+      </li>
+      <li class="cs-item">
+        <picture class="cs-picture">
+          <img
+            class="cs-icon"
+            loading="lazy"
+            decoding="async"
+            src="assets/svgs/integration.svg"
+            alt="icon"
+            width="48"
+            height="48"
+          />
+        </picture>
+        <h2 class="cs-h3">3. Integration</h2>
+        <p class="cs-item-text">
+          We prepare you for your role with the necessary training and support.
+        </p>
+      </li>
+      <li class="cs-item">
+        <picture class="cs-picture">
+          <img
+            class="cs-icon"
+            loading="lazy"
+            decoding="async"
+            src="assets/svgs/support.svg"
+            alt="icon"
+            width="48"
+            height="48"
+          />
+        </picture>
+        <h2 class="cs-h3">4. Support</h2>
+        <p class="cs-item-text">
+          We stay connected to ensure your success and satisfaction.
+        </p>
+      </li>
+    </ul>
+  </div>
+  <!--Tire Screech-->
+</section>
 
-    <section id="services" class="services">
-        <!-- Get Icons From flaticon.com -->
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/service1.svg"
-                alt="appliance"
-                width="48"
-                height="48" />
-            </picture>
-            <h2>Service 1</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
-        </div>
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/service2.svg"
-                alt="appliance"
-                width="48"
-                height="48" />
-            </picture>
-            <h2>Service 2</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
-        </div>
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/service3.svg"
-                alt="appliance"
-                width="48"
-                height="48" />
-            </picture>
-            <h2>Service 3</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
-        </div>
-    </section>
+<!-- ============================================ -->
+<!--                 Why Choose Us                -->
+<!-- ============================================ -->
 
-    <!-- ============================================ -->
-    <!--                 Side By Side                 -->
-    <!-- ============================================ -->
+<section id="why-choose-1710">
+  <div class="cs-container">
+      <div class="cs-content">
+          <span class="cs-topper">Why Choose Us</span>
+          <h2 class="cs-title">Why Partner with Us for Your Career Journey</h2>
+      </div>
+      <div class="cs-wrapper">
+          <ul class="cs-card-group">
+              <li class="cs-item">
+                  <span class="cs-item-number">01</span>
+                  <div class="cs-item-wrapper">
+                      <h3 class="cs-h3">
+                        Extensive Industry Experience
+                      </h3>
+                      <p class="cs-item-text">
+                        Our longevity in the field has equipped us with the knowledge and expertise to navigate the complexities of staffing and recruitment, ensuring we match you with the perfect opportunity.
+                      </p>
+                  </div>
+              </li>
+              <li class="cs-item">
+                  <span class="cs-item-number">02</span>
+                  <div class="cs-item-wrapper">
+                      <h3 class="cs-h3">
+                        Proprietary Recruiting Pipeline
+                      </h3>
+                      <p class="cs-item-text">
+                        Our unique recruiting process is designed to connect you with leading companies across the United States.
+                      </p>
+                  </div>
+              </li>
+              <li class="cs-item">
+                  <span class="cs-item-number">03</span>
+                  <div class="cs-item-wrapper">
+                      <h3 class="cs-h3">
+                        Comprehensive Support Services
+                      </h3>
+                      <p class="cs-item-text">
+                        We offer ongoing assistance with training, integration, and career development to ensure you're set up for success from day one and continue to thrive in your role.
+                      </p>
+                  </div>
+              </li>
+          </ul>
+          <ul class="cs-card-group">
+              <li class="cs-item">
+                  <span class="cs-item-number">04</span>
+                  <div class="cs-item-wrapper">
+                      <h3 class="cs-h3">
+                        Commitment to Employee Growth
+                      </h3>
+                      <p class="cs-item-text">
+                        Through training programs, professional development opportunities, and mentorship, we invest in your future, helping you to move up and forward in your career.
+                      </p>
+                  </div>
+              </li>
+              <li class="cs-item">
+                  <span class="cs-item-number">05</span>
+                  <div class="cs-item-wrapper">
+                      <h3 class="cs-h3">
+                        High Standards of Integrity and Maturity
+                      </h3>
+                      <p class="cs-item-text">
+                        Our core values of honesty, integrity, and maturity are at the heart of everything we do. 
+                      </p>
+                  </div>
+              </li>
+              <li class="cs-item">
+                  <span class="cs-item-number">07</span>
+                  <div class="cs-item-wrapper">
+                      <h3 class="cs-h3">
+                        Proven Track Record of Success
+                      </h3>
+                      <p class="cs-item-text">
+                        With a high rate of employee satisfaction and numerous success stories, our track record demonstrates our ability to consistently deliver results that exceed expectations.
+                      </p>
+                  </div>
+              </li>
+          </ul>
+      </div>
+      <!---SVG Graphic-->
+      <img class="cs-floater" src="assets/images/opaque-logo-2.png" alt="graphic" loading="lazy" decoding="async" height="710" aria-hidden="true" width="690">
+  </div>
+  <picture class="cs-picture">
+      <source media="(min-width: 1024px)"
+              srcset="assets/images/good-labor-jobs-here-to-serve.webp">
+      <source media="(min-width: 601px)"
+              srcset="assets/images/good-labor-jobs-here-to-serve.webp">
+      <source media="(max-width: 600px)"
+              srcset="assets/images/good-labor-jobs-here-to-serve.webp">
+      <img aria-hidden="true" loading="lazy" decoding="async"
+              src="assets/images/good-labor-jobs-here-to-serve.webp"
+              alt="Good Labor Jobs Here to Serve" width="1280" height="620">
+  </picture>
+</section>
 
-    <section id="sbs">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="563">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="563">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">About Company Title</h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <div class="cs-flex-group">
-                    <p class="cs-flex-p">
-                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
+<!-- ============================================ -->
+<!--                   Stats                      -->
+<!-- ============================================ -->
+
+<section id="stats-1668">
+  <div class="cs-container">
+      <ul class="cs-card-group">
+          <li class="cs-item">
+              <span class="cs-header">Years of Industry Leadership</span>
+              <span class="cs-number">20+</span>
+          </li>
+          <li class="cs-item">
+              <span class="cs-header">Successful Placements</span>
+              <span class="cs-number">10k+</span>
+          </li>
+          <li class="cs-item">
+              <span class="cs-header">Partner Companies Nationwide</span>
+              <span class="cs-number">44</span>
+          </li>
+          <li class="cs-item">
+              <span class="cs-header">Employee Satisfaction Rate</span>
+              <span class="cs-number">98%</span>
+          </li>
+      </ul>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                Meet The Team                 -->
+<!-- ============================================ -->
+
+<section id="meet-team-1677">
+  <div class="cs-container">
+      <div class="cs-content">
+          <span class="cs-topper">Our Team</span>
+          <h2 class="cs-title">Committed to Your Success</h2>
+      </div>
+      <ul class="cs-card-group">
+          <li class="cs-item">
+              <picture class="cs-picture">
+                  <!--Mobile Image-->
+                  <source media="(max-width: 600px)" srcset="assets/images/wyatt-orr-good-labor-jobs-team.webp">
+                  <!--Tablet and above Image-->
+                  <source media="(min-width: 601px)" srcset="assets/images/wyatt-orr-good-labor-jobs-team.webp">
+                  <img loading="lazy" decoding="async" src="assets/images/wyatt-orr-good-labor-jobs-team.webp" alt="person" width="290" height="380">
+              </picture>
+              <a href="https://www.linkedin.com/in/wyatt-orr/" class="cs-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+                  <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="assets/svgs/linkedin-green.svg" alt="LinkedIn Profile" width="22" height="22">
+              </a>
+              <div class="cs-info">
+                  <span class="cs-name">Wyatt Orr</span>
+                  <span class="cs-job">Business Development</span>
+              </div>
+          </li>
+          <li class="cs-item">
+              <picture class="cs-picture">
+                  <!--Mobile Image-->
+                  <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/day-care-team-three.png">
+                  <!--Tablet and above Image-->
+                  <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/day-care-team-three.png">
+                  <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/day-care-team-three.png" alt="person" width="290" height="380">
+              </picture>
+              <a href="" class="cs-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+                  <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="assets/svgs/linkedin-green.svg" alt="LinkedIn Profile" width="22" height="22">
+              </a>
+              <div class="cs-info">
+                  <span class="cs-name">Leslie Alexander</span>
+                  <span class="cs-job">Marketing Expert</span>
+              </div>
+          </li>
+          <li class="cs-item">
+              <picture class="cs-picture">
+                  <!--Mobile Image-->
+                  <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson1.jpg">
+                  <!--Tablet and above Image-->
+                  <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson1.jpg">
+                  <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson1.jpg" alt="person" width="290" height="380">
+              </picture>
+              <a href="" class="cs-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+                  <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="assets/svgs/linkedin-green.svg" alt="LinkedIn Profile" width="22" height="22">
+              </a>
+              <div class="cs-info">
+                  <span class="cs-name">Wade Warren</span>
+                  <span class="cs-job">SEO Expert</span>
+              </div>
+          </li>
+          <li class="cs-item">
+              <picture class="cs-picture">
+                  <!--Mobile Image-->
+                  <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/day-care-team-two.png">
+                  <!--Tablet and above Image-->
+                  <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/day-care-team-two.png">
+                  <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/day-care-team-two.png" alt="person" width="290" height="380">
+              </picture>
+              <a href="" class="cs-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+                  <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="assets/svgs/linkedin-green.svg" alt="LinkedIn Profile" width="22" height="22">
+              </a>
+              <div class="cs-info">
+                  <span class="cs-name">Jenny Wilson</span>
+                  <span class="cs-job">Web Developer</span>
+              </div>
+          </li>
+      </ul>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Reviews                    -->
+<!-- ============================================ -->
+
+<section id="reviews-1673">
+  <div class="cs-container">
+      <div class="cs-content">
+          <span class="cs-topper">Testimonials</span>
+          <h2 class="cs-title">Success Stories</h2>
+      </div>
+      <ul class="cs-card-group">
+          <li class="cs-item">
+              <div class="cs-flex-group">
+                  <picture class="cs-picture">
+                      <img class="cs-profile" src="assets/images/testimonial-1.png" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
+                  </picture>
+                  <span class="cs-name">
+                        Jacob Leonardo
+                      <span class="cs-job">Senior Manager of Rest Hotel</span>
+                  </span>
+              </div>
+              <div class="wrapper">
+                  <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="assets/svgs/yellow-stars.svg" alt="stars" width="96" height="16">
+                  <p class="cs-review">
+                  Good Labor Jobs provided our employees with competitive pay and benefits, job security and advancement, and a top-notch culture in which working conditions were favorable.
+                  </p>
+              </div>
+              <!--Quote Icon-->
+              <img class="cs-quote" aria-hidden="true" src="assets/svgs/gray-quote.svg" decoding="async" alt="quote icon" width="120" height="99" loading="lazy">
+          </li>
+          <li class="cs-item">
+              <div class="cs-flex-group">
+                  <picture class="cs-picture">
+                      <img class="cs-profile" src="assets/images/testimonial-2.png" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
+                  </picture>
+                  <span class="cs-name">
+                      Marisol Angelucci
+                      <span class="cs-job">Former Housekeeper</span>
+                  </span>
+              </div>
+              <div class="wrapper">
+                  <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="assets/svgs/yellow-stars.svg" alt="stars" width="96" height="16">
+                  <p class="cs-review">
+                  Esta es una gran empresa para trabajar. Trabajar para ellos me dio conocimientos para continuar mi carrera como ama de llaves. Gracias a Good Labor Jobs puedo hacer mi trabajo bastante bien.
+                  </p>
+              </div>
+              <!--Quote Icon-->
+              <img class="cs-quote" aria-hidden="true" src="assets/svgs/gray-quote.svg" decoding="async" alt="quote icon" width="120" height="99" loading="lazy">
+          </li>
+          <li class="cs-item">
+              <div class="cs-flex-group">
+                  <picture class="cs-picture">
+                      <img class="cs-profile" src="assets/images/testimonial-3.jpg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
+                  </picture>
+                  <span class="cs-name">
+                      Trevor Corda
+                      <span class="cs-job">Hiring Manager at B&T Construction</span>
+                  </span>
+              </div>
+              <div class="wrapper">
+                  <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="assets/svgs/yellow-stars.svg" alt="stars" width="96" height="16">
+                  <p class="cs-review">
+                  We could not be more pleased with the hiring, staffing, and training services provided to us by Good Labor Jobs. The company left no stone unturned, from payrol tax filing down to fair labor standards.
+                  </p>
+              </div>
+              <!--Quote Icon-->
+              <img class="cs-quote" aria-hidden="true" src="assets/svgs/gray-quote.svg" decoding="async" alt="quote icon" width="120" height="99" loading="lazy">
+          </li>
+      </ul>
+  </div>
+  <picture class="cs-background">
+      <source media="(max-width: 600px)" srcset="assets/images/good-labor-jobs-reviews.webp">
+      <source media="(min-width: 601px)" srcset="assets/images/good-labor-jobs-reviews.webp">
+      <img aria-hidden="true" decoding="async" src="assets/images/good-labor-jobs-reviews.webp" alt="Good Labor Jobs Reviews" width="886" height="842" loading="lazy">
+  </picture>
+</section>               
+
+<!-- ============================================ -->
+<!--                    FAQ                       -->
+<!-- ============================================ -->
+
+<section id="faq-1720">
+  <div class="cs-container">
+      <div class="cs-content">
+          <span class="cs-topper">Faq</span>
+          <h2 class="cs-title">Frequently Asked Questions</h2>
+      </div>
+      <div class="cs-flex-group">
+          <div class="cs-button-group">
+              <!--If you need to add another button, make sure to copy and paste from one of the buttons here and increment the data-filter value, so the next one would be data-filter="four", and so on-->
+              <div class="cs-flex">
+                  <button class="cs-option" data-filter="one">
+                      <img class="cs-icon" src="assets/svgs/plus.svg" alt="plus graphic" width="12" height="12" decoding="async" aria-hidden="true">
+                      Direct Hire Services
+                  </button>
+                  <button class="cs-option" data-filter="two">
+                      <img class="cs-icon" src="assets/svgs/plus.svg" alt="plus graphic" width="12" height="12" decoding="async" aria-hidden="true">
+                      Staffing Services
+                  </button>
+                  <button class="cs-option" data-filter="three">
+                      <img class="cs-icon" src="assets/svgs/plus.svg" alt="plus graphic" width="12" height="12" decoding="async" aria-hidden="true">
+                      Five Year Plan
+                  </button>
+                  <button class="cs-option" data-filter="four">
+                      <img class="cs-icon" src="assets/svgs/plus.svg" alt="plus graphic" width="12" height="12" decoding="async" aria-hidden="true">
+                      Employee Payroll
+                  </button>
+                  <button class="cs-option" data-filter="five">
+                      <img class="cs-icon" src="assets/svgs/plus.svg" alt="plus graphic" width="12" height="12" decoding="async" aria-hidden="true">
+                      General Questions
+                  </button>
+              </div>
+              <picture class="cs-picture">
+                  <!--Mobile Image-->
+                  <source media="(max-width: 600px)" srcset="assets/images/frequently-asked-questions-welder.webp">
+                  <!--Tablet and above Image-->
+                  <source media="(min-width: 601px)" srcset="assets/images/frequently-asked-questions-welder.webp">
+                  <img loading="lazy" decoding="async" src="assets/images/frequently-asked-questions-welder.webp" alt="Welder" width="353" height="493">
+              </picture>
+          </div>
+          <!--We need this wrapper so the absolutely positioned FAQ lists can be positioned to the top of it to so the animations don't amke it overlap the buttons group above it. We needed a wrapper div around it for the faq lists to be relatively positioned to in order to get the effect we wanted-->
+          <div class="cs-wrapper">
+              <!--If you add more FAQ's, copy and paste of of the .cs-faq-grop lists and increment the data-category to the next number. We have three right now, if you added a fourth you'd change it to data-category="four" to correspond to the new button you created in the .cs-button-group. The filter and category data attributes need to match so they can work together-->
+              <ul class="cs-faq-group" data-category="one">
+                  <!-- Active class added as default -->
+                  <li class="cs-faq-item">
+                      <button class="cs-button">
+                          <span class="cs-button-text">
+                              What are direct hire services?
+                          </span>
+                      </button>
+                      <p class="cs-item-p">
+                        Direct hire services involve recruiting candidates for permanent employment directly with our client companies. This means you become a direct employee of the hiring company from day one.
                     </p>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
-                    <img 
-                    class="cs-quote-icon"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg"
-                    alt="gavel"
-                    width="136"
-                    height="77" />
-                </div>
-                <a href="/about" class="cs-button-solid">More About Us</a>
-            </div>
-        </div>
-    </section>
+                  </li>
+                  <li class="cs-faq-item">
+                      <button class="cs-button">
+                          <span class="cs-button-text">
+                             How does the direct hire process work?
+                          </span>
+                      </button>
+                      <p class="cs-item-p">
+                        The process begins with understanding your career goals and skills, followed by matching you with open positions that fit your profile. We then facilitate interviews and negotiations, culminating in your direct placement with the company.
+                      </p>
+                  </li>
+                  <li class="cs-faq-item">
+                      <button class="cs-button">
+                          <span class="cs-button-text">
+                            What industries do you cover in your direct hire services?
+                          </span>
+                      </button>
+                      <p class="cs-item-p">
+                        We cover a broad range of industries including, but not limited to, industrial, construction, hospitality, and professional services.
+                      </p>
+                  </li>
+                  <li class="cs-faq-item">
+                      <button class="cs-button">
+                          <span class="cs-button-text">
+                            What are the benefits of direct hire for job seekers?
+                          </span>
+                      </button>
+                      <p class="cs-item-p">
+                        Benefits include permanent employment, full benefits from the employer, and the opportunity for immediate integration into the company culture.
+                      </p>
+                  </li>
+                  <li class="cs-faq-item">
+                      <button class="cs-button">
+                          <span class="cs-button-text">
+                            How long does the direct hire process typically take?
+                          </span>
+                      </button>
+                      <p class="cs-item-p">
+                        The timeline can vary based on the specific role and company, but it generally takes between 4 to 6 weeks from initial interview to job offer. 
+                      </p>
+                  </li>
+                  <li class="cs-faq-item">
+                      <button class="cs-button">
+                          <span class="cs-button-text">
+                            Is there a fee for job seekers using your direct hire services?
+                          </span>
+                      </button>
+                      <p class="cs-item-p">
+                        No, our services are completely free for job seekers. Our fees are paid by the employer.
+                      </p>
+                  </li>
+                  <li class="cs-faq-item">
+                      <button class="cs-button">
+                          <span class="cs-button-text">
+                            How do you ensure a good match in the direct hire process?
+                          </span>
+                      </button>
+                      <p class="cs-item-p">
+                        We use a combination of in-depth interviews, skill assessments, and our understanding of the employer’s culture and requirements to ensure a strong match. 
+                      </p>
+                  </li>
+                  <li class="cs-faq-item">
+                      <button class="cs-button">
+                          <span class="cs-button-text">
+                            What happens if the placement doesn’t work out?
+                          </span>
+                      </button>
+                      <p class="cs-item-p">
+                        While rare, if a placement does not work out, we will work closely with both the candidate and the employer to resolve any issues or assist in finding a new opportunity. 
+                      </p>
+                  </li>
+                  <li class="cs-faq-item">
+                      <button class="cs-button">
+                          <span class="cs-button-text">
+                            Are there opportunities for advancement with direct hire positions?
+                          </span>
+                      </button>
+                      <p class="cs-item-p">
+                        Absolutely. Direct hire positions are with companies that are looking for candidates to grow and advance within their organization.
+                      </p>
+                  </li>
+              </ul>
+              <ul class="cs-faq-group cs-hidden" data-category="two">
+                  <!-- Active class added as default -->
+                  <li class="cs-faq-item">
+                      <button class="cs-button">
+                          <span class="cs-button-text">
+                              How can I improve my credit score?
+                          </span>
+                      </button>
+                      <p class="cs-item-p">
+                          In the U.S., the terms lawyer and attorney are often used interchangeably. A lawyer provides legal services such as giving legal advice, writing legal documents and providing policy counsel to governments. An attorney, on top of these things also holds a state or regional license to represent clients in a law court.
+                      </p>
+                  </li>
+                  <li class="cs-faq-item">
+                      <button class="cs-button">
+                          <span class="cs-button-text">
+                              What is the best way to start investing?
+                          </span>
+                      </button>
+                      <p class="cs-item-p">
+                          In the U.S., the terms lawyer and attorney are often used interchangeably. A lawyer provides legal services such as giving legal advice, writing legal documents and providing policy counsel to governments. An attorney, on top of these things also holds a state or regional license to represent clients in a law court.
+                      </p>
+                  </li>
+                  <li class="cs-faq-item">
+                      <button class="cs-button">
+                          <span class="cs-button-text">
+                              What are the tax implications of investing in the stock market?
+                          </span>
+                      </button>
+                      <p class="cs-item-p">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                      </p>
+                  </li>
+                  <li class="cs-faq-item">
+                      <button class="cs-button">
+                          <span class="cs-button-text">
+                              How can I improve my credit score?
+                          </span>
+                      </button>
+                      <p class="cs-item-p">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                      </p>
+                  </li>
+                  <li class="cs-faq-item">
+                      <button class="cs-button">
+                          <span class="cs-button-text">
+                              What is the difference between a traditional IRA and a Roth IRA?
+                          </span>
+                      </button>
+                      <p class="cs-item-p">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                      </p>
+                  </li>
+                  <li class="cs-faq-item">
+                      <button class="cs-button">
+                          <span class="cs-button-text">
+                              How can I improve my credit score?
+                          </span>
+                      </button>
+                      <p class="cs-item-p">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                      </p>
+                  </li>
+                  <li class="cs-faq-item">
+                      <button class="cs-button">
+                          <span class="cs-button-text">
+                              How can I improve my credit score?
+                          </span>
+                      </button>
+                      <p class="cs-item-p">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                      </p>
+                  </li>
+                  <li class="cs-faq-item">
+                      <button class="cs-button">
+                          <span class="cs-button-text">
+                              How can I improve my credit score?
+                          </span>
+                      </button>
+                      <p class="cs-item-p">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                      </p>
+                  </li>
+                  <li class="cs-faq-item">
+                      <button class="cs-button">
+                          <span class="cs-button-text">
+                              How can I reduce my tax liability as a self-employed individual?
+                          </span>
+                      </button>
+                      <p class="cs-item-p">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                      </p>
+                  </li>
+              </ul>
+              <ul class="cs-faq-group cs-hidden" data-category="three">
+                  <!-- Active class added as default -->
+                  <li class="cs-faq-item">
+                      <button class="cs-button">
+                          <span class="cs-button-text">
+                              How can I reduce my tax liability as a self-employed individual?
+                          </span>
+                      </button>
+                      <p class="cs-item-p">
+                          In the U.S., the terms lawyer and attorney are often used interchangeably. A lawyer provides legal services such as giving legal advice, writing legal documents and providing policy counsel to governments. An attorney, on top of these things also holds a state or regional license to represent clients in a law court.
+                      </p>
+                  </li>
+                  <li class="cs-faq-item">
+                      <button class="cs-button">
+                          <span class="cs-button-text">
+                              What is the best way to start investing?
+                          </span>
+                      </button>
+                      <p class="cs-item-p">
+                          In the U.S., the terms lawyer and attorney are often used interchangeably. A lawyer provides legal services such as giving legal advice, writing legal documents and providing policy counsel to governments. An attorney, on top of these things also holds a state or regional license to represent clients in a law court.
+                      </p>
+                  </li>
+                  <li class="cs-faq-item">
+                      <button class="cs-button">
+                          <span class="cs-button-text">
+                              What are the tax implications of investing in the stock market?
+                          </span>
+                      </button>
+                      <p class="cs-item-p">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                      </p>
+                  </li>
+                  <li class="cs-faq-item">
+                      <button class="cs-button">
+                          <span class="cs-button-text">
+                              How can I improve my credit score?
+                          </span>
+                      </button>
+                      <p class="cs-item-p">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                      </p>
+                  </li>
+                  <li class="cs-faq-item">
+                      <button class="cs-button">
+                          <span class="cs-button-text">
+                              What is the difference between a traditional IRA and a Roth IRA?
+                          </span>
+                      </button>
+                      <p class="cs-item-p">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                      </p>
+                  </li>
+                  <li class="cs-faq-item">
+                      <button class="cs-button">
+                          <span class="cs-button-text">
+                              How can I reduce my tax liability as a self-employed individual?
+                          </span>
+                      </button>
+                      <p class="cs-item-p">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                      </p>
+                  </li>
+                  <li class="cs-faq-item">
+                      <button class="cs-button">
+                          <span class="cs-button-text">
+                              How can I reduce my tax liability as a self-employed individual?
+                          </span>
+                      </button>
+                      <p class="cs-item-p">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                      </p>
+                  </li>
+                  <li class="cs-faq-item">
+                      <button class="cs-button">
+                          <span class="cs-button-text">
+                              How can I reduce my tax liability as a self-employed individual?
+                          </span>
+                      </button>
+                      <p class="cs-item-p">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                      </p>
+                  </li>
+                  <li class="cs-faq-item">
+                      <button class="cs-button">
+                          <span class="cs-button-text">
+                              How can I reduce my tax liability as a self-employed individual?
+                          </span>
+                      </button>
+                      <p class="cs-item-p">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                      </p>
+                  </li>
+              </ul>
+              <ul class="cs-faq-group cs-hidden" data-category="four">
+                  <!-- Active class added as default -->
+                  <li class="cs-faq-item">
+                      <button class="cs-button">
+                          <span class="cs-button-text">
+                              How can I reduce my tax liability as a self-employed individual?
+                          </span>
+                      </button>
+                      <p class="cs-item-p">
+                          In the U.S., the terms lawyer and attorney are often used interchangeably. A lawyer provides legal services such as giving legal advice, writing legal documents and providing policy counsel to governments. An attorney, on top of these things also holds a state or regional license to represent clients in a law court.
+                      </p>
+                  </li>
+                  <li class="cs-faq-item">
+                      <button class="cs-button">
+                          <span class="cs-button-text">
+                              What is the best way to start investing?
+                          </span>
+                      </button>
+                      <p class="cs-item-p">
+                          In the U.S., the terms lawyer and attorney are often used interchangeably. A lawyer provides legal services such as giving legal advice, writing legal documents and providing policy counsel to governments. An attorney, on top of these things also holds a state or regional license to represent clients in a law court.
+                      </p>
+                  </li>
+                  <li class="cs-faq-item">
+                      <button class="cs-button">
+                          <span class="cs-button-text">
+                              What are the tax implications of investing in the stock market?
+                          </span>
+                      </button>
+                      <p class="cs-item-p">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                      </p>
+                  </li>
+                  <li class="cs-faq-item">
+                      <button class="cs-button">
+                          <span class="cs-button-text">
+                              How can I improve my credit score?
+                          </span>
+                      </button>
+                      <p class="cs-item-p">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                      </p>
+                  </li>
+                  <li class="cs-faq-item">
+                      <button class="cs-button">
+                          <span class="cs-button-text">
+                              What is the difference between a traditional IRA and a Roth IRA?
+                          </span>
+                      </button>
+                      <p class="cs-item-p">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                      </p>
+                  </li>
+                  <li class="cs-faq-item">
+                      <button class="cs-button">
+                          <span class="cs-button-text">
+                              How can I reduce my tax liability as a self-employed individual?
+                          </span>
+                      </button>
+                      <p class="cs-item-p">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                      </p>
+                  </li>
+                  <li class="cs-faq-item">
+                      <button class="cs-button">
+                          <span class="cs-button-text">
+                              How can I reduce my tax liability as a self-employed individual?
+                          </span>
+                      </button>
+                      <p class="cs-item-p">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                      </p>
+                  </li>
+                  <li class="cs-faq-item">
+                      <button class="cs-button">
+                          <span class="cs-button-text">
+                              How can I reduce my tax liability as a self-employed individual?
+                          </span>
+                      </button>
+                      <p class="cs-item-p">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                      </p>
+                  </li>
+                  <li class="cs-faq-item">
+                      <button class="cs-button">
+                          <span class="cs-button-text">
+                              How can I reduce my tax liability as a self-employed individual?
+                          </span>
+                      </button>
+                      <p class="cs-item-p">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                      </p>
+                  </li>
+              </ul>
+              <ul class="cs-faq-group cs-hidden" data-category="five">
+                  <!-- Active class added as default -->
+                  <li class="cs-faq-item">
+                      <button class="cs-button">
+                          <span class="cs-button-text">
+                              How can I reduce my tax liability as a self-employed individual?
+                          </span>
+                      </button>
+                      <p class="cs-item-p">
+                          In the U.S., the terms lawyer and attorney are often used interchangeably. A lawyer provides legal services such as giving legal advice, writing legal documents and providing policy counsel to governments. An attorney, on top of these things also holds a state or regional license to represent clients in a law court.
+                      </p>
+                  </li>
+                  <li class="cs-faq-item">
+                      <button class="cs-button">
+                          <span class="cs-button-text">
+                              What is the best way to start investing?
+                          </span>
+                      </button>
+                      <p class="cs-item-p">
+                          In the U.S., the terms lawyer and attorney are often used interchangeably. A lawyer provides legal services such as giving legal advice, writing legal documents and providing policy counsel to governments. An attorney, on top of these things also holds a state or regional license to represent clients in a law court.
+                      </p>
+                  </li>
+                  <li class="cs-faq-item">
+                      <button class="cs-button">
+                          <span class="cs-button-text">
+                              What are the tax implications of investing in the stock market?
+                          </span>
+                      </button>
+                      <p class="cs-item-p">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                      </p>
+                  </li>
+                  <li class="cs-faq-item">
+                      <button class="cs-button">
+                          <span class="cs-button-text">
+                              How can I improve my credit score?
+                          </span>
+                      </button>
+                      <p class="cs-item-p">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                      </p>
+                  </li>
+                  <li class="cs-faq-item">
+                      <button class="cs-button">
+                          <span class="cs-button-text">
+                              What is the difference between a traditional IRA and a Roth IRA?
+                          </span>
+                      </button>
+                      <p class="cs-item-p">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                      </p>
+                  </li>
+                  <li class="cs-faq-item">
+                      <button class="cs-button">
+                          <span class="cs-button-text">
+                              How can I reduce my tax liability as a self-employed individual?
+                          </span>
+                      </button>
+                      <p class="cs-item-p">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                      </p>
+                  </li>
+                  <li class="cs-faq-item">
+                      <button class="cs-button">
+                          <span class="cs-button-text">
+                              How can I reduce my tax liability as a self-employed individual?
+                          </span>
+                      </button>
+                      <p class="cs-item-p">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                      </p>
+                  </li>
+                  <li class="cs-faq-item">
+                      <button class="cs-button">
+                          <span class="cs-button-text">
+                              How can I reduce my tax liability as a self-employed individual?
+                          </span>
+                      </button>
+                      <p class="cs-item-p">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                      </p>
+                  </li>
+                  <li class="cs-faq-item">
+                      <button class="cs-button">
+                          <span class="cs-button-text">
+                              How can I reduce my tax liability as a self-employed individual?
+                          </span>
+                      </button>
+                      <p class="cs-item-p">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                      </p>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</section>
 
-    <!-- ============================================ -->
-    <!--            Extra Content To Rank             -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                    CTA                       -->
+<!-- ============================================ -->
 
-    <section id="sbs-r">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="560">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="560">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">SEO Ranking</span>
-                <h2 class="cs-title">Talk about a main service keyword</h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non tenetur, iure nihil ipsam qui atque commodi id voluptatem nesciunt, quis animi fuga cum doloribus! Eaque laboriosam, unde consectetur iure asperiores ullam. Consequuntur debitis a voluptatibus vitae optio autem explicabo quia neque est quas, in placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus modi laudantium voluptatibus rem libero error minus quia eligendi sapiente eos.
-                </p>
-                <a href="/blog" class="cs-button-solid">Read our Blog</a>
-            </div>
-        </div>
-    </section>
+<section id="cta-488">
+  <div class="cs-container">
+      <div class="cs-content">
+          <span class="cs-topper">Join Us</span>
+          <h2 class="cs-title">Let's Build Your Future Together</h2>
+          <a href="/contact" class="cs-link">Contact Us</a>
+      </div>
+  </div>
+  <picture class="cs-background">
+      <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/CTA/meeting-m.jpg">
+      <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/CTA/meeting.jpg">
+      <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/CTA/meeting.jpg" alt="meeting" width="1920" height="543" aria-hidden="true">
+  </picture>
+</section>
 
-    <!-- ============================================ -->
-    <!--                   Gallery                    -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                    Blog                      -->
+<!-- ============================================ -->
 
-    <section id="gallery">
-        <div class="cs-container">
-            <span class="cs-topper">Our Portfolio</span>
-            <h2 class="cs-title">Et orci volutpat, back up generator installations</h2>
-            <div class="cs-image-group">
-                <!-- Row 1-->
-                <div class="cs-row cs-row-1">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port1-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port1.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port1.jpg" alt="new hallway" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port4-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port4.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port4.jpg" alt="new home construction" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port7-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port7.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port7.jpg" alt="building a new wall" loading="lazy" width="400" height="560">
-                    </picture>
-                </div>
-                <!-- Row 2 -->
-                <div class="cs-row cs-row-2">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port2-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port2.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port2.jpg" alt="new kitchen" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port5-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port5.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port5.jpg" alt="apartment addition" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port8-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port8.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port8.jpg" alt="kew kitchen cabinets" loading="lazy" width="400" height="560">
-                    </picture>
-                </div>
-                <!-- Row 3 -->
-                <div class="cs-row cs-row-3">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port3-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port3.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port3.jpg" alt="new kitchen" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port6-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port6.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port6.jpg" alt="apartment addition" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port9-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port9.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port9.jpg" alt="kew kitchen cabinets" loading="lazy" width="400" height="560">
-                    </picture>
+<section id="blog-1654">
+  <div class="cs-container">
+      <div class="cs-content">
+          <picture class="cs-picture">
+              <!--Mobile Image-->
+              <source media="(max-width: 600px)" srcset="assets/images/blog-post-business-magazine.webp">
+              <!--Tablet and above Image-->
+              <source media="(min-width: 601px)" srcset="assets/images/blog-post-business-magazine.webp">
+              <img loading="lazy" decoding="async" src="assets/images/blog-post-business-magazine.webp" alt="busines meeting" width="413" height="652" aria-hidden="true">
+          </picture>
+          <div class="cs-text-wrapper">
+              <span class="cs-topper">Our Blog</span>
+              <h2 class="cs-title">Insights & Inspiration </h2>
+          </div>
+      </div>
+      <div class="cs-posts">
+          <ul class="cs-card-group">
+              <li class="cs-item">
+                  <picture class="cs-image" aria-hidden="true">
+                      <source media="(max-width: 600px)" srcset="assets/images/blog/reduce-employee-turnover.jpg">
+                      <source media="(min-width: 601px)" srcset="assets/images/blog/reduce-employee-turnover.jpg">
+                      <img loading="lazy" decoding="async" src="assets/images/blog/reduce-employee-turnover.jpg" alt="Construction Worker" width="413" height="320">
+                  </picture>
+                  <div class="cs-flex">
+                      <span class="cs-date">Mar 26, 2024</span>
+                      <h3 class="cs-h3">Reducing Employee Turnover: Strategies for Long-Term Success with Good Labor Jobs</h3>
+                      <p class="cs-item-text">
+                        Employee turnover is a challenge faced by businesses across all industries. High turnover not only impacts the stability of a workforce but can also incur...
+                      </p>
+                      <a href="blog/reducing-employee-turnover-strategies-for-long-term-success-with-good-labor-jobs/" class="cs-link">
+                          Continue Reading
+                          <img class="cs-arrow" loading="lazy" decoding="async" src="assets/svgs/green-arrow.svg" alt="icon" width="20" height="20" aria-hidden="true">
+                      </a>
+                  </div>
+              </li>
+              <li class="cs-item">
+                  <picture class="cs-image" aria-hidden="true">
+                      <source media="(max-width: 600px)" srcset="assets/images/blog/bridging-communities.webp">
+                      <source media="(min-width: 601px)" srcset="assets/images/blog/bridging-communities.webp">
+                      <img loading="lazy" decoding="async" src="assets/images/blog/bridging-communities.webp" alt="Bridging Communities" width="413" height="320">
+                  </picture>
+                  <div class="cs-flex">
+                      <span class="cs-date">Feb 23, 2024</span>
+                      <h3 class="cs-h3">Bridging Industries and Communities: Good Labor Jobs Pioneers Quality Temporary Employment Solutions</h3>
+                      <p class="cs-item-text">
+                        In an ever-evolving job market where industries like manufacturing and hospitality demand flexibility and adaptability, the role of temporary labor has become...
+                      </p>
+                      <a href="/blog/bridging-industries-and-communities-good-labor-jobs-pioneers-quality-temporary-employment-solutions/" class="cs-link">
+                          Continue Reading
+                          <img class="cs-arrow" loading="lazy" decoding="async" src="assets/svgs/green-arrow.svg" alt="icon" width="20" height="20" aria-hidden="true">
+                      </a>
+                  </div>
+              </li>
+          </ul>
+      </div>
+  </div>
+</section>                   
 
-                </div>
-            </div>
-            <a href="/projects" class="cs-button-solid">View Full Gallery</a>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                   Reviews                    -->
-    <!-- ============================================ -->
-
-    <section id="reviews">
-        <div class="cs-container">
-            <span class="cs-topper">Our Reviews</span>
-            <h2 class="cs-title">Words From Our Customers</h2>
-            <p class="cs-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dolor volutpat porttitor sagittis nunc nisl. Sagittis sit pellentesque gravida viverra. Leo ut sed euismod tortor risus et. Ornare non neque, leo, ornare. Lorem ipsum dolor sit amet.
-            </p>
-            <ul class="cs-card-group">
-                <!-- Review 1 -->
-                <li class="cs-item">
-                    <img
-                    class="cs-item-img"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile5.png"
-                    alt="profile picture"
-                    width="80"
-                    height="80" />
-                    <p class="cs-item-p">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
-                    </p>
-                    <span class="cs-reviewer">
-                        Jon Doe
-                        <span class="cs-desc">Homeowner</span>
-                    </span>
-                    <img
-                    class="cs-item-stars"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
-                    alt="stars"
-                    width="96"
-                    height="16" />
-                </li>
-                <!-- Review 2 -->
-                <li class="cs-item">
-                    <img
-                    class="cs-item-img"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile-4.png"
-                    alt="profile picture"
-                    width="80"
-                    height="80" />
-                    <p class="cs-item-p">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
-                    </p>
-                    <span class="cs-reviewer">
-                        Jane Doe
-                        <span class="cs-desc">Homeowner</span>
-                    </span>
-                    <img
-                    class="cs-item-stars"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
-                    alt="stars"
-                    width="96"
-                    height="16" />
-                </li>
-            </ul>
-            <a aria-label="read more reviews" href="/reviews" class="cs-button-solid">Our Reviews</a>
-        </div>
-    </section>
-
-    {% include 'components/cta.html' %}
-{% endblock %}
+{% include 'components/cta.html' %} {% endblock %}

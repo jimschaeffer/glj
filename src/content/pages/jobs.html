@@ -1,0 +1,69 @@
+---
+title: "Job Portal"
+description: ""
+permalink: "jobs/"
+eleventyNavigation:
+  key: "Jobs"
+  order: "400"
+---
+
+{% extends "layouts/base.html" %} {% block head %}
+<link rel="stylesheet" href="/assets/css/jobs.css" />
+{% endblock %} {% block body %}
+
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-1400">
+  <div class="cs-container">
+    <span class="cs-int-title">Job Portal</span>
+    <div class="cs-breadcrumbs">
+      <a href="/" class="cs-link">Home</a>
+      <a href="" class="cs-link cs-active">Jobs</a>
+    </div>
+  </div>
+  <!--Background Image-->
+  <picture class="cs-background">
+    <!--Mobile Image-->
+    <source
+      media="(max-width: 600px)"
+      srcset="/assets/images/banner-job-portal-welder.webp"
+    />
+    <!--Tablet and above Image-->
+    <source
+      media="(min-width: 601px)"
+      srcset="/assets/images/banner-job-portal-welder.webp"
+    />
+    <img
+      decoding="async"
+      src="/assets/images/banner-job-portal-welder.webp"
+      alt="Welder"
+      width="1280"
+      height="568"
+      aria-hidden="true"
+    />
+  </picture>
+</div>
+
+<!-- ============================================ -->
+<!--                    Steps                     -->
+<!-- ============================================ -->
+
+<section id="steps-1376">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper">Job Portal</span>
+      <h2 class="cs-title">Explore Our Diverse Range of Job Opportunities</h2>
+    </div>
+    <script
+      id="compas-jobs-widget"
+      type="text/javascript"
+      src="https://hire.myavionte.com/app/careers/dist/jobs.js"
+      data-bid="LRJlcbM5haU"
+      data-jbid="BqruU89HpZ0"
+    ></script>
+  </div>
+</section>
+
+{% include 'components/cta.html' %} {% endblock %}

@@ -1,88 +1,102 @@
 ---
-title: 'Blog'
-description: 'Meta description for the page'
-preloadImg: '/assets/images/cabinets2.jpg'
-permalink: 'blog/'
+title: "Blog"
+description: ""
+permalink: "blog/"
 eleventyNavigation:
-    key: Blog
-    order: 500
+  key: "Blog"
+  order: "600"
 ---
 
-{% extends "layouts/base.html" %}
+{% extends "layouts/base.html" %} {% block head %}
+<link rel="stylesheet" href="/assets/css/blog.css" />
+{% endblock %} {% block body %}
 
-{% block head %}
-    <link rel="stylesheet" href="/assets/css/blog.css">
-{% endblock %}
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
 
-{% block body %}
-    <!-- ============================================ -->
-    <!--                    LANDING                   -->
-    <!-- ============================================ -->
-
-    <section id="int-hero">
-        <h1 id="home-h">Blog</h1>
-        <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
-        </picture>
-    </section>
-
-    <!-- ============================================ -->
-    <!--              Main Blog Content               -->
-    <!-- ============================================ -->
-
-    <div class="blog-container main-content-wrapper">
-        <!--Main content -->
-        <div class="main-content">
-            <!-- ============================================ -->
-            <!--                 Blog Articles                -->
-            <!-- ============================================ -->
-
-            {% if collections.post | length == 0 %}
-                <h1>No Recent Posts</h1>
-            {% else %}
-                {%- for post in collections.post | reverse -%}
-                    <article class="recent-articles">
-                        <!--Main Article Image-->
-                        <picture class="blog-mainImage">
-                            <img
-                            src="{{ post.data.image }}"
-                            alt="{{ post.data.imageAlt }}"
-                            width="795"
-                            height="400"
-                            decoding="async" />
-                        </picture>
-                        <!--Article Info-->
-                        <div class="article-group">
-                            <div class="blog-authorGroup">
-                                <!--Author Image-->
-                                <picture class="blog-author-img">
-                                    <img
-                                    src="/assets/svgs/profile.svg"
-                                    alt="house"
-                                    width="32"
-                                    height="32"
-                                    decoding="async" />
-                                </picture>
-                                <span class="blog-author">{{ post.data.author }}</span>
-                                <span aria-hidden="true" class="blog-dot"></span>
-                                <!--Blog Date-->
-                                <span class="blog-date">{{ post.date | postDate }}</span>
-                            </div>
-                            <h2 class="blog-h1">
-                                {{ post.data.title }}
-                            </h2>
-                            <p class="blog-desc">
-                                {{ post.data.description }}
-                            </p>
-                            <a href="{{ post.url }}" class="blog-link">Continue Reading</a>
-                        </div>
-                    </article>
-                {%- endfor -%}
-            {% endif %}
-        </div>
-
-        {% include 'components/featured-post.html' %}
+<div id="banner-1400">
+  <div class="cs-container">
+    <span class="cs-int-title">Blog</span>
+    <div class="cs-breadcrumbs">
+      <a href="/" class="cs-link">Home</a>
+      <a href="" class="cs-link cs-active">Blog</a>
     </div>
-{% endblock %}
+  </div>
+  <!--Background Image-->
+  <picture class="cs-background">
+    <!--Mobile Image-->
+    <source
+      media="(max-width: 600px)"
+      srcset="/assets/images/banner-blog-discussion.webp"
+    />
+    <!--Tablet and above Image-->
+    <source
+      media="(min-width: 601px)"
+      srcset="/assets/images/banner-blog-discussion.webp"
+    />
+    <img
+      decoding="async"
+      src="/assets/images/banner-blog-discussion.webp"
+      alt="Working Table Discussion"
+      width="1280"
+      height="568"
+      aria-hidden="true"
+    />
+  </picture>
+</div>
+
+<!-- ============================================ -->
+<!--              Main Blog Content               -->
+<!-- ============================================ -->
+
+<div class="blog-container main-content-wrapper">
+  <!--Main content -->
+  <div class="main-content">
+    <!-- ============================================ -->
+    <!--                 Blog Articles                -->
+    <!-- ============================================ -->
+
+    {% if collections.post | length == 0 %}
+    <h1>No Recent Posts</h1>
+    {% else %} {%- for post in collections.post | reverse -%}
+    <article class="recent-articles">
+      <!--Main Article Image-->
+      <picture class="blog-mainImage">
+        <img
+          src="{{ post.data.image }}"
+          alt="{{ post.data.imageAlt }}"
+          width="795"
+          height="400"
+          decoding="async"
+        />
+      </picture>
+      <!--Article Info-->
+      <div class="article-group">
+        <div class="blog-authorGroup">
+          <!--Author Image-->
+          <picture class="blog-author-img">
+            <img
+              src="/assets/images/blog-author-coby-orr.png"
+              alt="Blog Author Coby Orr"
+              width="32"
+              height="32"
+              decoding="async"
+            />
+          </picture>
+          <span class="blog-author">{{ post.data.author }}</span>
+          <span aria-hidden="true" class="blog-dot"></span>
+          <!--Blog Date-->
+          <span class="blog-date">{{ post.date | postDate }}</span>
+        </div>
+        <h2 class="blog-h1">{{ post.data.title }}</h2>
+        <p class="blog-desc">{{ post.data.description }}</p>
+        <a href="{{ post.url }}" class="blog-link">Continue Reading</a>
+      </div>
+    </article>
+    {%- endfor -%} {% endif %}
+  </div>
+
+  {% include 'components/featured-post.html' %}
+</div>
+{% include 'components/cta.html' %} {% endblock %}

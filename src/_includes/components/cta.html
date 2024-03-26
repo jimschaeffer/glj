@@ -1,23 +1,226 @@
 <!-- ============================================ -->
-<!--             Final Call to Action             -->
+<!--            Final Call to Action              -->
 <!-- ============================================ -->
 
-<section id="cta">
-    <div class="container">
-        <h2 class="title">
-            Get It Done
-            <br />
-            With Us Today
-        </h2>
-        <p>
-            Say something catchy, informative, and encouraging to click the button to go to the contact page. I like to add these to the bottom of all pages.
-        </p>
-        <a href="/contact" class="cs-button-solid">Get an Estimate Now</a>
+<section id="contact-1695">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper">Contact Us</span>
+      <h2 class="cs-title">Get In Touch</h2>
+      <ul class="cs-ul">
+        <li class="cs-li">
+          <picture class="cs-icon-wrapper">
+            <img
+              aria-hidden="true"
+              src="/assets/svgs/call.svg"
+              alt="phone icon"
+              class="cs-icon"
+              width="24"
+              height="24"
+              decoding="async"
+            />
+          </picture>
+          <div class="cs-flex-group">
+            <span class="cs-header">Drop Us a Line</span>
+            <span class="cs-link-text">We are available via phone at</span>
+            <a href="tel:{{ client.phoneForTel }}" class="cs-link"
+              >{{ client.phoneFormatted }}</a
+            >
+          </div>
+        </li>
+        <li class="cs-li">
+          <picture class="cs-icon-wrapper">
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              src="/assets/svgs/message.svg"
+              alt="address icon"
+              width="24"
+              height="24"
+              decoding="async"
+            />
+          </picture>
+          <div class="cs-flex-group">
+            <span class="cs-header">Email Us</span>
+            <span class="cs-link-text">Reach out to us at</span>
+            <a href="mailto:{{ client.email }}" class="cs-link"
+              >{{ client.email }}</a
+            >
+          </div>
+        </li>
+        <li class="cs-li">
+          <picture class="cs-icon-wrapper">
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              src="/assets/svgs/account.svg"
+              alt="address icon"
+              width="24"
+              height="24"
+              decoding="async"
+            />
+          </picture>
+          <div class="cs-flex-group">
+            <span class="cs-header">Follow Us on Social Media</span>
+            <div class="cs-social">
+              <a
+                class="cs-social-link"
+                aria-label="Visit Facebook Profile"
+                href="{{ client.social.facebook }}"
+                target="_blank"
+              >
+                <img
+                  class="cs-social-img"
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="/assets/svgs/facebook-1a.svg"
+                  alt="Facebook"
+                  width="11"
+                  height="11"
+                />
+              </a>
+              <a
+                class="cs-social-link"
+                aria-label="Visit Instagram Profile"
+                href="{{ client.social.instagram }}"
+                target="_blank"
+              >
+                <img
+                  class="cs-social-img"
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="/assets/svgs/instagram-1a.svg"
+                  alt="Instagram"
+                  width="11"
+                  height="11"
+                />
+              </a>
+              <a
+                class="cs-social-link"
+                aria-label="Visit LinkedIn Profile"
+                href="{{ client.social.linkedin }}"
+                target="_blank"
+              >
+                <img
+                  class="cs-social-img"
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="/assets/svgs/linkedin-1a.svg"
+                  alt="LinkedIn"
+                  width="11"
+                  height="11"
+                />
+              </a>
+              <a
+                class="cs-social-link"
+                aria-label="Visit YouTube Profile"
+                href="{{ client.social.youtube }}"
+                target="_blank"
+              >
+                <img
+                  class="cs-social-img"
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="/assets/svgs/youtube-1a.svg"
+                  alt="YouTube"
+                  width="11"
+                  height="11"
+                />
+              </a>
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
-    <picture>
-        <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-        <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-        <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="lazy" width="2500" height="1667">
-    </picture>
+    <!--Form-->
+    <form class="cs-form" name="Contact Form" method="post">
+      <label class="cs-label">
+        Name
+        <input
+          class="cs-input"
+          required
+          type="text"
+          id="name-1695"
+          name="name"
+          placeholder="Name"
+        />
+      </label>
+      <label class="cs-label">
+        Email
+        <input
+          class="cs-input"
+          required
+          type="email"
+          id="email-1695"
+          name="email"
+          placeholder="Email"
+        />
+      </label>
+      <label class="cs-label">
+        Phone
+        <input
+          class="cs-input"
+          required
+          type="tel"
+          id="phone-1695"
+          name="phone"
+          placeholder="Phone"
+        />
+      </label>
+      <label class="cs-label">
+        How Did You Find Us?
+        <input
+          class="cs-input"
+          type="text"
+          id="find-1695"
+          name="find-us"
+          placeholder="Google, Social Media, etc."
+        />
+      </label>
+      <label class="cs-label cs-label-message">
+        Message
+        <textarea
+          class="cs-input cs-textarea"
+          required
+          name="Message"
+          id="message-1695"
+          placeholder="Your Message..."
+        ></textarea>
+      </label>
+      <p class="cs-wrapper">
+        <button class="cs-button-solid cs-submit" type="submit">
+          Send Message
+        </button>
+      </p>
+    </form>
+  </div>
 
+  <picture class="cs-background">
+    <!--Mobile Image-->
+    <source
+      media="(max-width: 600px)"
+      srcset="
+        https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/enterprise-form-bg-m.png
+      "
+    />
+    <!--Tablet and above Image-->
+    <source
+      media="(min-width: 601px)"
+      srcset="
+        https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/enterprise-form-bg.png
+      "
+    />
+    <img
+      loading="lazy"
+      decoding="async"
+      src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/enterprise-form-bg.png"
+      alt="wind turbine"
+      width="650"
+      height="613"
+    />
+  </picture>
 </section>

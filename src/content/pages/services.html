@@ -1,0 +1,63 @@
+---
+title: "Services"
+description: ""
+permalink: "services/"
+eleventyNavigation:
+  key: "Services"
+  order: "300"
+---
+
+{% extends 'layouts/base.html' %} {% block head %}
+<link rel="stylesheet" href="/assets/css/services.css" />
+{% endblock %} {% block body %}
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-1400">
+  <div class="cs-container">
+    <span class="cs-int-title">Services</span>
+    <div class="cs-breadcrumbs">
+      <a href="" class="cs-link">Home</a>
+      <a href="" class="cs-link cs-active">Services</a>
+    </div>
+  </div>
+  <!--Background Image-->
+  <picture class="cs-background">
+    <!--Mobile Image-->
+    <source
+      media="(max-width: 600px)"
+      srcset="
+        https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/people-laughing.jpg
+      "
+    />
+    <!--Tablet and above Image-->
+    <source
+      media="(min-width: 601px)"
+      srcset="
+        https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/people-laughing.jpg
+      "
+    />
+    <img
+      decoding="async"
+      src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/people-laughing.jpg"
+      alt="people laughing"
+      width="1280"
+      height="568"
+      aria-hidden="true"
+    />
+  </picture>
+</div>
+
+{# Inlining the script tag to make it easier when merging #}
+<script>
+  const faqItems = Array.from(document.querySelectorAll(".cs-faq-item"));
+  for (const item of faqItems) {
+    const onClick = () => {
+      item.classList.toggle("active");
+    };
+    item.addEventListener("click", onClick);
+  }
+</script>
+
+{% include 'components/cta.html' %} {% endblock %}

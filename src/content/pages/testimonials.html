@@ -1,0 +1,117 @@
+---
+title: "Testimonials"
+description: ""
+permalink: "testimonials/"
+eleventyNavigation:
+  key: "Testimonials"
+  order: "500"
+---
+
+{% extends "layouts/base.html" %} {% block head %}
+<link rel="stylesheet" href="/assets/css/testimonials.css" />
+{% endblock %} {% block body %}
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-1400">
+  <div class="cs-container">
+    <span class="cs-int-title">Testimonials</span>
+    <div class="cs-breadcrumbs">
+      <a href="/" class="cs-link">Home</a>
+      <a href="" class="cs-link cs-active">Testimonials</a>
+    </div>
+  </div>
+  <!--Background Image-->
+  <picture class="cs-background">
+    <!--Mobile Image-->
+    <source
+      media="(max-width: 600px)"
+      srcset="/assets/images/banner-testimonials-happy-construction-worker.webp"
+    />
+    <!--Tablet and above Image-->
+    <source
+      media="(min-width: 601px)"
+      srcset="/assets/images/banner-testimonials-happy-construction-worker.webp"
+    />
+    <img
+      decoding="async"
+      src="/assets/images/banner-testimonials-happy-construction-worker.webp"
+      alt="Happy Construction Worker"
+      width="1280"
+      height="568"
+      aria-hidden="true"
+    />
+  </picture>
+</div>
+
+<!-- ============================================ -->
+<!--                 Content Page                 -->
+<!-- ============================================ -->
+
+<section id="content-page-847">
+  <div class="cs-container">
+    <div class="cs-content">
+      <h1 class="cs-title">Testimonials Heading</h1>
+      <p>Content p1</p>
+      <p>Content p2</p>
+      <p>Content p3</p>
+      <h2>H2 Heading</h2>
+      <p>paragraph</p>
+    </div>
+    <div class="cs-image-group">
+      <!--Top Picture-->
+      <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/tax3.jpg
+          "
+        />
+        <!--Tablet and above Image-->
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/tax3.jpg
+          "
+        />
+        <img
+          decoding="async"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/tax3.jpg"
+          alt="person"
+          width="542"
+          height="520"
+          aria-hidden="true"
+        />
+      </picture>
+      <!--Top Picture-->
+      <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/tax4.jpg
+          "
+        />
+        <!--Tablet and above Image-->
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/tax4.jpg
+          "
+        />
+        <img
+          decoding="async"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/tax4.jpg"
+          alt="person"
+          width="542"
+          height="520"
+          aria-hidden="true"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
+
+{% include 'components/cta.html' %} {% endblock %}

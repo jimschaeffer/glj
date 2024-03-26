@@ -1,44 +1,126 @@
-/* DARK MODE AND TOGGLE STYLES */
-
 /*-- -------------------------- -->
 <---      Core Dark Styles      -->
 <--- -------------------------- -*/
-
 /* Mobile */
-@media only screen and (min-width: 0em) {
-    // Dark Mode Color Scheme
-    :root {
-        --dark: #082032;
-        --medium: #2c394b;
-        --accent: #334756;
+@media only screen and (min-width: 0rem) {
+  :root {
+    --dark: #082032;
+    --medium: #2c394b;
+    --accent: #334756;
+    --bodyTextColorWhite: #fafbfc;
+  }
+  body.dark-mode {
+    background-color: var(--dark);
+  }
+  body.dark-mode p,
+  body.dark-mode li,
+  body.dark-mode h1,
+  body.dark-mode h2,
+  body.dark-mode h3,
+  body.dark-mode h4,
+  body.dark-mode h5,
+  body.dark-mode h6,
+  body.dark-mode .cs-title,
+  body.dark-mode .cs-text,
+  body.dark-mode .cs-li {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode .light {
+    display: none;
+  }
+  body.dark-mode .dark {
+    display: block !important;
+  }
+  .dark {
+    /* class used to hide elements that only need to be seen when dark mode is enabled */
+    display: none;
+  }
+}
+
+/*-- -------------------------- -->
+<---      Dark Mode Toggle      -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode {
+    #dark-mode-toggle {
+      .cs-sun {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+      }
+
+      .cs-moon {
+        transform: translate(-50%, -150%);
+        opacity: 0;
+      }
+    }
+  }
+
+  #dark-mode-toggle {
+    display: block;
+    position: absolute;
+    bottom: (16/16rem);
+    right: (90/16rem);
+    width: (48/16rem);
+    height: (48/16rem);
+    background: transparent;
+    border: none;
+    overflow: hidden;
+    padding: 0;
+    z-index: 1000;
+
+    img,
+    svg {
+      //center image inside button
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: (20/16rem);
+      height: (20/16rem);
+      pointer-events: none;
     }
 
-    body.dark-mode {
-        background-color: var(--dark);
-
-        p,
-        li,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            color: #fff;
-        }
-
-        // hide all light classes
-        .light {
-            display: none;
-        }
-
-        // show all dark classes
-        .dark {
-            display: block !important;
-        }
+    .cs-moon {
+      z-index: 2;
+      // Transition properties
+      transition: transform 0.3s, opacity 0.3s;
+      fill: #1a1a1a;
     }
 
-    .dark {
-        display: none;
+    .cs-sun {
+      z-index: 1;
+      // Transition property
+      transform: translate(-50%, 100%);
+      opacity: 0;
+      transition: transform 0.3s, opacity 0.3s;
     }
+  }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #dark-mode-toggle {
+    margin-left: (16/16rem);
+    position: relative;
+    bottom: auto;
+    right: auto;
+    order: 3;
+  }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #dark-mode-toggle {
+    position: relative;
+    transform: none;
+    bottom: auto;
+    right: auto;
+    margin: 0;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
