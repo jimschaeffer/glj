@@ -177,162 +177,164 @@
 }
 
 /*-- -------------------------- -->
-<---        Content Page        -->
+<---          Reviews           -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #content-page-847 {
+  #reviews-1673 {
     padding: var(--sectionPadding);
-    background-color: #fff;
     position: relative;
     z-index: 1;
-    /* clips the wave background from causing overflow issues when it goes off screen */
-    overflow: hidden;
 
     .cs-container {
       width: 100%;
-      max-width: (1280/16rem);
+      /* changes to 1280px at tablet */
+      max-width: (584/16rem);
       margin: auto;
       display: flex;
       flex-direction: column;
       align-items: center;
-      /* 48px - 64px */
-      gap: clamp(3rem, 6vw, 4rem);
-      position: relative;
+      justify-content: center;
+      /* 40px - 64px */
+      gap: clamp(2.5rem, 4.5vw, 4rem);
     }
 
     .cs-content {
-      /* set text align to left if content needs to be left aligned */
       text-align: left;
       width: 100%;
-      max-width: (630/16rem);
       display: flex;
       flex-direction: column;
-      /* centers content horizontally, set to flex-start to left align */
       align-items: flex-start;
     }
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-weight: 700;
-      text-align: inherit;
-      margin: 0 0 (16/16rem) 0;
-      color: var(--headerColor);
+
+    .cs-title {
+      margin: (0/16rem);
     }
 
-    h2 {
-      font-size: (32/16rem);
-      margin-top: (32/16rem);
-    }
-
-    h3 {
-      font-size: (24/16rem);
-      color: var(--primary);
-    }
-
-    h4,
-    h5,
-    h6 {
-      font-size: (20/16rem);
-    }
-
-    .cs-button-solid {
-      margin-bottom: (32/16rem);
-    }
-
-    .cs-no-margin {
+    .cs-card-group {
+      padding: 0;
       margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      /* 16px - 20px */
+      gap: clamp(1rem, 2.5vw, 1.25rem);
     }
 
-    .cs-color {
-      color: var(--primary);
-    }
-
-    p {
-      font-size: var(--bodyFontSize);
-      line-height: 1.5em;
-      text-align: inherit;
+    .cs-item {
+      list-style: none;
       width: 100%;
-      margin: 0 0 (16/16rem) 0;
-      color: var(--bodyTextColor);
-      &:last-of-type {
-        margin-bottom: (32/16rem);
-      }
+      max-width: (630/16rem);
+      /* 20px - 40px top & bottom */
+      /* 20px - 40px left & right */
+      padding: clamp(1.25rem, 3.15vw, 2.5rem) clamp(1.25rem, 3.15vw, 2.5rem);
+      background-color: #f7f7f7;
+      /* prevents padding from adding to height and width */
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      position: relative;
+      /* 24px - 48px */
+      gap: clamp(1.5rem, 4vw, 3rem);
+    }
 
-      a {
-        font-size: inherit;
-        line-height: inherit;
-        text-decoration: underline;
-        color: var(--primary);
+    .cs-flex-group {
+      /* this margin top auto will push everything up and force the cs-flex-group to the bottom of the container. This is to account for review cards with different heights because of more or less text and makes the cards more responsive to changing text */
+      margin-top: auto;
+      display: flex;
+      align-items: flex-start;
+      gap: (12/16rem);
+    }
+
+    .cs-profile {
+      width: (52/16rem);
+      height: (52/16rem);
+      border-radius: 50%;
+      position: relative;
+      display: block;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        /* makes the image behave like a background image */
+        object-fit: cover;
       }
     }
 
-    ol,
-    ul {
-      margin: 0 0 (32/16rem) 0;
-      padding-left: (24/16rem);
+    .cs-name {
+      /* 20px - 25px */
+      font-size: (20/16rem);
+      line-height: 1.2em;
+      font-weight: 700;
+      margin: 0;
+      /* in case one card has more text than the other, this pushes up against the review text so the name and title are always at the bottom. Only works if parent is a flexbox */
+      margin-top: auto;
+      color: var(--headerColor);
+      display: block;
+    }
+
+    .cs-job {
+      /* 14px - 16px */
+      font-size: (16/16rem);
+      line-height: 1.5em;
+      font-weight: 400;
+      margin: 0;
       color: var(--bodyTextColor);
+      display: block;
+    }
+
+    .wrapper {
       display: flex;
       flex-direction: column;
       gap: (16/16rem);
     }
 
-    ul {
-      li {
-        list-style: none;
-        color: inherit;
-        position: relative;
-
-        &:before {
-          /* custom list bullet */
-          content: "";
-          width: 3px;
-          height: 3px;
-          background: currentColor;
-          opacity: 1;
-          border-radius: 50%;
-          display: block;
-          position: absolute;
-          top: (10/16rem);
-          left: (-12/16rem);
-        }
-      }
-    }
-
-    img {
-      width: 100%;
+    .cs-item-stars {
+      width: (108/16rem);
       height: auto;
-      display: block;
     }
 
-    .cs-image-group {
-      width: 50%;
-      max-width: (542/16rem);
+    .cs-review {
+      /* 14px - 16px */
+      font-size: clamp(0.875rem, 1.6vw, 1.25rem);
+      line-height: 1.5em;
+      margin: 0;
+      color: var(--bodyTextColor);
+      z-index: 1;
+    }
+
+    .cs-quote {
+      width: (86/16rem);
+      height: auto;
+      position: absolute;
+      right: (0/16rem);
+      bottom: (0/16rem);
+      z-index: 0;
+    }
+
+    .cs-background {
       display: none;
-      flex-direction: column;
-      gap: (20/16rem);
-      position: relative;
-    }
-
-    .cs-picture {
-      width: 100%;
-      /* 300px - 520px */
-      height: clamp(18.75rem, 40vw, 32.5rem);
-      /* prevents border from affecting height and width */
-      box-sizing: border-box;
-      box-shadow: 0px 3.3478px 50.2169px rgba(0, 0, 0, 0.16);
-      display: block;
-      position: relative;
-      /* clips img tag corners */
-      overflow: hidden;
+      position: absolute;
+      left: 50%;
+      /* changes to 40px at 1300px */
+      right: (16/16rem);
+      top: (40/16rem);
+      bottom: (40/16rem);
+      z-index: -1;
 
       img {
+        position: absolute;
         width: 100%;
         height: 100%;
-        /* makes it act like a background image */
+        top: 0;
+        left: 0;
         object-fit: cover;
       }
     }
@@ -341,20 +343,28 @@
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #content-page-847 {
+  #reviews-1673 {
     .cs-container {
+      max-width: (1280/16rem);
+    }
+
+    .cs-card-group {
       flex-direction: row;
       justify-content: space-between;
-      align-items: flex-start;
+      align-items: stretch;
     }
 
-    .cs-content {
-      width: 60%;
-      flex: none;
+    .cs-background {
+      display: block;
     }
+  }
+}
 
-    .cs-image-group {
-      display: flex;
+/* Large Desktop - 1300px */
+@media only screen and (min-width: 81.25rem) {
+  #reviews-1673 {
+    .cs-background {
+      right: (40/16rem);
     }
   }
 }
@@ -362,33 +372,24 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
   body.dark-mode {
-    #content-page-847 {
-      background-color: var(--dark);
-
+    #reviews-1673 {
       .cs-title,
-      .cs-text,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6,
-      li,
-      p {
+      .cs-review,
+      .cs-name {
         color: var(--bodyTextColorWhite);
       }
-      .cs-color,
-      a {
-        color: var(--primaryLight);
+
+      .cs-item {
+        background-color: var(--medium);
       }
 
-      p,
-      li {
-        color: #ebebeb;
+      .cs-job {
+        color: var(--bodyTextColorWhite);
+        opacity: 0.7;
       }
 
-      .cs-picture {
-        background-color: var(--dark);
-        border-color: var(--dark);
+      .cs-quote {
+        opacity: 0.2;
       }
     }
   }

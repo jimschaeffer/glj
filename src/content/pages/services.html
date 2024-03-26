@@ -45,15 +45,145 @@ eleventyNavigation:
   </picture>
 </div>
 
-{# Inlining the script tag to make it easier when merging #}
-<script>
-  const faqItems = Array.from(document.querySelectorAll(".cs-faq-item"));
-  for (const item of faqItems) {
-    const onClick = () => {
-      item.classList.toggle("active");
-    };
-    item.addEventListener("click", onClick);
-  }
-</script>
+<!-- ============================================ -->
+<!--                    Services                  -->
+<!-- ============================================ -->
+
+<section id="services-1329">
+  <div class="cs-container">
+    <div class="cs-content">
+      <div class="cs-flex-group">
+        <span class="cs-topper">Our Services</span>
+        <h2 class="cs-title">Partner With Good Labor Jobs</h2>
+      </div>
+      <p class="cs-text">
+        We are your comprehensive solution for payroll, compliance, and risk
+        management services. Our commitment is to provide seamless support to
+        startups, staffing companies, and employers, allowing them to focus on
+        their core business while we handle the intricacies of workforce
+        management.
+      </p>
+    </div>
+    <ul class="cs-card-group">
+      <li class="cs-item">
+        <a href="/jobs" class="cs-link">
+          <span class="cs-number">01</span>
+          <h3 class="cs-h3">Direct Hire Services</h3>
+          <p class="cs-item-text">
+            We cater to individuals of all skill levels, offering positions in
+            landscaping, construction, hospitality, and more.
+          </p>
+        </a>
+        <picture class="cs-picture">
+          <source
+            media="(max-width: 600px)"
+            srcset="/assets/images/direct-hire-services-housekeeping.webp"
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="/assets/images/direct-hire-services-housekeeping.webp"
+          />
+          <img
+            decoding="async"
+            src="/assets/images/direct-hire-services-housekeeping.webp"
+            alt="Direct Hire Services"
+            width="413"
+            height="374"
+            aria-hidden="true"
+          />
+        </picture>
+        <!--On Hover Image-->
+        <img
+          class="cs-arrow"
+          loading="lazy"
+          decoding="async"
+          src="/assets/images/opaque-logo-2.png"
+          alt="Good Labor Jobs Logo"
+          width="412"
+          height="249"
+          aria-hidden="true"
+        />
+      </li>
+      <li class="cs-item">
+        <a href="/services" class="cs-link">
+          <span class="cs-number">02</span>
+          <h3 class="cs-h3">Staffing Services</h3>
+          <p class="cs-item-text">
+            We provide support to startups, staffing companies, and employers,
+            allowing them to focus on their core business.
+          </p>
+        </a>
+        <picture class="cs-picture">
+          <source
+            media="(max-width: 600px)"
+            srcset="/assets/images/staffing-services-machine-operation.webp"
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="/assets/images/staffing-services-machine-operation.webp"
+          />
+          <img
+            decoding="async"
+            src="/assets/images/staffing-services-machine-operation.webp"
+            alt="Staffing Services"
+            width="413"
+            height="374"
+            aria-hidden="true"
+          />
+        </picture>
+        <!--On Hover Image-->
+        <img
+          class="cs-arrow"
+          loading="lazy"
+          decoding="async"
+          src="/assets/images/opaque-logo-2.png"
+          alt="Good Labor Jobs Logo"
+          width="412"
+          height="249"
+          aria-hidden="true"
+        />
+      </li>
+      <li class="cs-item">
+        <a href="/services" class="cs-link">
+          <span class="cs-number">03</span>
+          <h3 class="cs-h3">Five-Year Plan</h3>
+          <p class="cs-item-text">
+            Allow us to provide your company with support, kick-starting our
+            relationship as a comprehensive solution for your needs.
+          </p>
+        </a>
+        <picture class="cs-picture">
+          <source
+            media="(max-width: 600px)"
+            srcset="/assets/images/five-year-plan.webp"
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="/assets/images/five-year-plan.webp"
+          />
+          <img
+            decoding="async"
+            src="/assets/images/five-year-plan.webp"
+            alt="Five-Year-Plan"
+            width="413"
+            height="374"
+            aria-hidden="true"
+          />
+        </picture>
+        <!--On Hover Image-->
+        <img
+          class="cs-arrow"
+          loading="lazy"
+          decoding="async"
+          src="/assets/images/opaque-logo-2.png"
+          alt="Good Labor Jobs Logo"
+          width="412"
+          height="249"
+          aria-hidden="true"
+        />
+      </li>
+    </ul>
+  </div>
+</section>
 
 {% include 'components/cta.html' %} {% endblock %}
