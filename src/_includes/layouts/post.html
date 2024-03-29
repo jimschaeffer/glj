@@ -10,31 +10,41 @@ eleventyComputed:
 {% extends "layouts/base.html" %} {% block head %}
 <link rel="stylesheet" href="/assets/css/blog.css" />
 {% endblock %} {% block body %}
+
 <!-- ============================================ -->
-<!--                    LANDING                   -->
+<!--                   Banner                     -->
 <!-- ============================================ -->
 
-<section id="int-hero">
-  <picture>
+<div id="banner-1400">
+  <div class="cs-container">
+    <span class="cs-int-title">Blog</span>
+    <div class="cs-breadcrumbs">
+      <a href="/" class="cs-link">Home</a>
+      <a href="" class="cs-link cs-active">Blog</a>
+    </div>
+  </div>
+  <!--Background Image-->
+  <picture class="cs-background">
+    <!--Mobile Image-->
     <source
       media="(max-width: 600px)"
-      srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/CTA/meeting.jpg"
+      srcset="/assets/images/banner-blog-discussion.webp"
     />
+    <!--Tablet and above Image-->
     <source
       media="(min-width: 601px)"
-      srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/CTA/meeting.jpg"
+      srcset="/assets/images/banner-blog-discussion.webp"
     />
     <img
-      aria-hidden="true"
       decoding="async"
-      src="https://csimg.nyc3.cdn.digitaloceanspaces.com/CTA/meeting.jpg"
-      alt="Good Labor Jobs Meeting"
-      loading="eager"
-      width="2500"
-      height="1667"
+      src="/assets/images/banner-blog-discussion.webp"
+      alt="Working Table Discussion"
+      width="1280"
+      height="568"
+      aria-hidden="true"
     />
   </picture>
-</section>
+</div>
 
 <!-- ============================================ -->
 <!--              Main Blog Content               -->
