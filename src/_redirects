@@ -1,1 +1,14 @@
+# Redirect specific paths to new URLs
+/en/services                                /services
+/en/employers                               /about
+/en/about-us                                /about
+/en/blog                                    /blog
+/en/contact-us                              /contact
+/en/podcast                                 /blog
+/bridging-industries-communities.html       /blog/bridging-industries-and-communities-good-labor-jobs-pioneers-quality-temporary-employment-solutions/
+/reduce-employee-turnover.html              /blog/reducing-employee-turnover-strategies-for-long-term-success-with-good-labor-jobs/
+/the-5-keys-to-successful-onboarding.html   /blog/the-5-keys-to-successful-onboarding-setting-the-foundation-with-good-labor-jobs/
+/workforce-challenges-and-opportunities.html /blog/workforce-challenges-and-opportunities-navigating-success-with-good-labor-jobs/
 
+# General rule to remove .html from any URLs
+/*.html                                     /:splat
