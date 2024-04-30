@@ -22,7 +22,6 @@
     padding: 0 1.5rem;
     color: #fff;
     background-color: var(--headerColor);
-    border-radius: 0.25rem;
     display: inline-block;
     position: relative;
     z-index: 1;
@@ -381,43 +380,35 @@
   .recent-articles .blog-link {
     font-size: 1rem;
     font-weight: 700;
-    /* 46px - 56px */
-    line-height: clamp(2.875em, 5.5vw, 3.5em);
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
     text-align: center;
     text-decoration: none;
-    min-width: 9.375rem;
-    margin: auto;
-    /* prevents padding from adding to the width */
+    width: clamp(13.625rem, 23vw, 13.625rem);
+    /* 28px - 40px */
+    /* prevents padding from affecting height and width */
     box-sizing: border-box;
     padding: 0 1.5rem;
     color: #fff;
-    background-color: var(--headerColor);
-    border-radius: 0.25rem;
+    background-color: var(--primary);
     display: inline-block;
     position: relative;
     z-index: 1;
-    transition: color 0.3s;
   }
   .recent-articles .blog-link:before {
     content: "";
-    width: 100%;
+    width: 0%;
     height: 100%;
-    box-sizing: border-box;
-    background: #fff;
-    opacity: 0;
-    border: 1px solid var(--headerColor);
-    border-radius: 0.25rem;
+    background: #000;
+    opacity: 1;
+    /* add a border radius below this to round corners */
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
-    transition: opacity 0.3s;
-  }
-  .recent-articles .blog-link:hover {
-    color: var(--headerColor);
+    transition: width 0.3s;
   }
   .recent-articles .blog-link:hover:before {
-    opacity: 1;
+    width: 100%;
   }
 }
 /* Mobile - 1024px */

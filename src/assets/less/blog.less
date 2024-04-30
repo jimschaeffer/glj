@@ -24,7 +24,6 @@
     padding: 0 (24/16rem);
     color: #fff;
     background-color: var(--headerColor);
-    border-radius: (4/16rem);
     display: inline-block;
     position: relative;
     z-index: 1;
@@ -461,46 +460,36 @@
     .blog-link {
       font-size: (16/16rem);
       font-weight: 700;
-      /* 46px - 56px */
-      line-height: clamp(2.875em, 5.5vw, 3.5em);
+      line-height: clamp(2.875rem, 5.5vw, 3.5rem);
       text-align: center;
       text-decoration: none;
-      min-width: (150/16rem);
-      margin: auto;
-      /* prevents padding from adding to the width */
+      width: clamp(13.625rem, 23vw, 13.625rem);
+      /* 28px - 40px */
+      /* prevents padding from affecting height and width */
       box-sizing: border-box;
       padding: 0 (24/16rem);
       color: #fff;
-      background-color: var(--headerColor);
-      border-radius: (4/16rem);
+      background-color: var(--primary);
       display: inline-block;
       position: relative;
       z-index: 1;
-      z-index: 1;
-      transition: color 0.3s;
 
       &:before {
         content: "";
-        width: 100%;
+        width: 0%;
         height: 100%;
-        box-sizing: border-box;
-        background: #fff;
-        opacity: 0;
-        border: 1px solid var(--headerColor);
-        border-radius: (4/16rem);
+        background: #000;
+        opacity: 1;
+        /* add a border radius below this to round corners */
         position: absolute;
         top: 0;
         left: 0;
         z-index: -1;
-        z-index: -1;
-        transition: opacity 0.3s;
+        transition: width 0.3s;
       }
 
-      &:hover {
-        color: var(--headerColor);
-        &:before {
-          opacity: 1;
-        }
+      &:hover:before {
+        width: 100%;
       }
     }
   }
