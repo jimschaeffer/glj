@@ -1261,6 +1261,19 @@
       gap: (12/16rem);
     }
 
+    .cs-form-2 {
+      width: 100%;
+      max-width: (630/16rem);
+      /* prevents flexbox from affecting height and width */
+      box-sizing: border-box;
+      /* 24px - 48px top and bottom */
+      /* 16px - 48px left and right */
+      padding-left: 1rem;
+      padding-right: 1rem;
+      display: grid;
+      flex-wrap: wrap;
+    }
+
     .cs-label {
       font-size: (16/16rem);
       font-weight: 700;
