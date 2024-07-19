@@ -9,7 +9,7 @@
 /reduce-employee-turnover.html              /blog/reducing-employee-turnover-strategies-for-long-term-success-with-good-labor-jobs/
 /the-5-keys-to-successful-onboarding.html   /blog/the-5-keys-to-successful-onboarding-setting-the-foundation-with-good-labor-jobs/
 /workforce-challenges-and-opportunities.html /blog/workforce-challenges-and-opportunities-navigating-success-with-good-labor-jobs/
-/en/podcast                                 https://hire.myavionte.com/sonar/v2/careers/integrations/standalone/general?bId=LRJlcbM5haU&jbId=nXyGo-CkTUY&rpid=general
+/generalapply                                https://hire.myavionte.com/sonar/v2/careers/integrations/standalone/general?bId=LRJlcbM5haU&jbId=nXyGo-CkTUY&rpid=general
 
 # General rule to remove .html from any URLs
 /*.html                                     /:splat
