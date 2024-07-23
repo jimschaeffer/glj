@@ -6,7 +6,7 @@ description: In the intricate world of manufacturing, the backbone of success
   fuel our daily lives. At Good Labor Jobs, we recognize and celebrate the vital
   role that these unsung heroes play in the industry.
 author: Coby Orr
-date: 2024-07-23T09:30:00.000Z
+date: 2024-07-23T09:20:00.000Z
 tags:
   - jobs
   - local
@@ -17,8 +17,8 @@ tags:
   - work
   - ethic
   - learning
-image: /assets/images/blog/increased-product-development.jpg
-imageAlt: "Orange machines "
+image: /assets/images/blog/adobestock-nbf9za1sve.jpg
+imageAlt: tech guy
 ---
 ## Commitment to Quality
 
