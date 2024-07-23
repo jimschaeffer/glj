@@ -1,6 +1,5 @@
 ---
-title: Reducing Employee Turnover - Strategies for Long-Term Success with Good
-  Labor Jobs
+title: Reducing Employee Turnover
 description: Employee turnover is a challenge faced by businesses across all
   industries. High turnover not only impacts the stability of a workforce but
   can also incur significant costs in terms of recruitment, training, and lost
