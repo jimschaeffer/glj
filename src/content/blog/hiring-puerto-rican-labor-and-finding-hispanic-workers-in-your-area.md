@@ -1,5 +1,5 @@
 ---
-title: Hiring Puerto Rican Labor and Finding Hispanic Workers in Your Area
+title: Hiring Puerto Rican Labor
 description: "At Good Labor Jobs, we understand the importance of bridging the
   gap between employers and skilled labor, regardless of geographical
   boundaries. Here's why considering Puerto Rican and Hispanic labor can be a
