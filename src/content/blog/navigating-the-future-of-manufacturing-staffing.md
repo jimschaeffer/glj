@@ -1,5 +1,5 @@
 ---
-title: Navigating the Future of Manufacturing Staffing
+title: The Future of Manufacturing Staffing
 description: The manufacturing world is changing fast, and so is the way
   companies find and hire talent. As we move through 2024, the manufacturing
   staffing industry is facing some unique challenges and opportunities. Here’s a
