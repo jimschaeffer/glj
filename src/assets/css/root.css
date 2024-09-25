@@ -31,6 +31,14 @@
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
   }
+  a {
+    color: var(--primary);
+    text-decoration: underline;
+  }
+  a:hover,
+  a:focus {
+    color: #9dafe5;
+  }
   .cs-topper {
     font-size: var(--topperFontSize);
     line-height: 1.2em;
