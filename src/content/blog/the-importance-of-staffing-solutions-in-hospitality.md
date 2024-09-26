@@ -1,10 +1,9 @@
 ---
 title: The Importance of Staffing Solutions in Hospitality
-description: The role of Good Labor Jobs in providing staffing solutions for the
-  hospitality industry. It covers how their services, including recruitment,
+description: "The role of Good Labor Jobs in providing staffing solutions for
+  the hospitality industry. It covers how their services, including recruitment,
   payroll, and training, help businesses maintain high service standards and
-  manage seasonal labor needs efficiently. For more information, visit Good
-  Labor Jobs.
+  manage seasonal labor needs efficiently. "
 author: Coby Orr
 date: 2024-09-26T10:33:00.000Z
 tags:
