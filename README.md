@@ -1,22 +1,10 @@
 <br/>
 <p align="center">
-  <a href="https://codestitch.app/">
-    <img src="https://codestitch.app/frontend/images/icon.png" alt="Logo" width="80" height="80">
-  </a>
 
-  <h3 align="center">Intermediate Starter Kit (LESS)</h3>
+  <h3 align="center">Good Labor Jobs</h3>
 
   <p align="center">
-    Introducing the official intermediate starter kit, presented by CodeStitch. This kit includes a pre-configured Eleventy setup that utilizes Nunjucks templating, along with a seamless integration of Decap CMS, providing an easy way to manage a blog. Everything is ready to go right from the start, offering a fantastic introduction to the advantages of a Static Site Generator, complete with LESS preprocessing.
-    <br/>
-    <br/>
-    <a href="https://github.com/CodeStitchOfficial/Intermediate-Website-Kit-SASS">SASS Starter Kit</a>
-    .
-    <a href="https://codestitch-intermediate.netlify.app/">View Live Result</a>
-    .
-    <a href="https://www.youtube.com/watch?v=0BNCYM4InT0&t">Watch Video</a>
-    .
-    <a href="https://codestitch.app/contact">Report Bug</a>
+    This website includes a pre-configured Eleventy setup that utilizes Nunjucks templating, along with a seamless integration of Decap CMS, providing an easy way to manage a blog. Everything is ready to go right from the start, offering a Static Site Generator, complete with LESS preprocessing.
   </p>
 </p>
 
@@ -43,10 +31,9 @@ The intermediate starter kits build off the beginner kits, mainly by including a
 allows for repeated components, centralized data and greater room to scale as your clients grow. On top of this, a blog has been provided through
 <a href="https://decapcms.org/">Decap CMS</a> to allow your clients to manage their content on their own. This can easily be adapted to anything which requires
 changing content, such as menus, job listing boards, portfolios and much more. A few additional plugins have also been included to improve developer experience,
-providing HTML/CSS minification and automatic sitemap generation
+providing HTML/CSS minification and automatic sitemap generation.
 
-An example website has also been provided, with easy substitution of website sections possible through the use of <a href="https://codestitch.app/">CodeStitch's
-vanilla component library</a>. This kit aims to get any project off the ground in as little time as possible, with deployment being possible in as little as two
+This kit aims to get any project off the ground in as little time as possible, with deployment being possible in as little as two
 minutes - including CMS hosting.
 
 <a name="prerequisites"></a>
@@ -122,7 +109,7 @@ Only the vanilla web technologies are _required_ before using this kit, with som
 
 ## Getting Started
 
-1. At the top right of the <a href="https://github.com/CodeStitchOfficial/Intermediate-Website-Kit-LESS">GitHub Repository</a>, click the green _Use this template_ button,
+1. At the top right of the GitHub Repository, click the green _Use this template_ button,
    then click _Create a new repository_.
 2. Follow the instructions to create a new repository, using this repo as a template.
 3. When created, clone the repository to your local machine.
@@ -135,13 +122,13 @@ Running `npm start` will start a development server, begin LESS preprocessing an
 Next, it is recommended to update `_data/client.json` with some new information about this project. Through the power of templating, the
 project's `<head>` and contact information will automatically be filled out, providing a first peek into some of the benefits of SSGs. Please ensure the correct file protocol (usually "https://") is used for the client's domain
 
-Finally, you can find all of CodeStitches `:root` variables, as well as .cs-topper, .cs-title and .cs-text, within the `root` stylesheet. Feel free to adjust these, or use our Content Flair micro-stitches, to update site-wide styles quickly.
+Finally, you can find all `:root` variables, as well as .cs-topper, .cs-title and .cs-text, within the `root` stylesheet. Feel free to adjust these, or use our Content Flair micro-stitches, to update site-wide styles quickly.
 
 <a name="expandingTheProject"></a>
 
 ## Expanding the Project
 
-Aimed towards freelancers, this kit was made with scalability and flexibility in mind, suiting a range of websites and client needs. As such, it is your choice
+This kit was made with scalability and flexibility in mind, suiting a range of websites and client needs. As such, it is your choice
 whether you'd rather make small tweaks to the existing site, or clear all the page content and build a site all over again. Outlined below are some best
 practices for when it comes to building on top of this kit:
 
