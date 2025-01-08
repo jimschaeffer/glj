@@ -14,6 +14,7 @@ tags:
 image: /assets/images/blog/staffing-services-assembly-line.avif
 imageAlt: Assembly Line
 ---
+
 ## Connecting Talent with Opportunity
 
 For over two decades, [Good Labor Jobs has been the industry leader in Puerto Rican recruiting](../../about), connecting thousands of job seekers with their ideal roles in multibillion-dollar industrial factories, landscaping, construction, and hospitality companies. Our success lies in our deep understanding of the job market and our commitment to personalized, consultative experiences for both candidates and employers.
