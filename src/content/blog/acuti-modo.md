@@ -39,6 +39,6 @@ Good Labor Jobs employs a proprietary recruiting pipeline that allows us to iden
 
 We recognize that one size does not fit all. By offering a [variety of staffing and hiring options, including temporary, permanent, and temp-to-hire solutions](https://goodlaborjobs.com/services/), we empower our clients to adapt to changing workforce needs. This flexibility allows companies to scale up or down as required without the need for frequent turnover.
 
-# Conclusion
+## Conclusion
 
 Reducing employee turnover is a shared goal at Good Labor Jobs. Our commitment to a consultative experience, cost-effective retention strategies, integrated business solutions, a proprietary recruiting pipeline, and flexible staffing options [sets us apart as an industry leader in Puerto Rican recruiting](https://goodlaborjobs.com/about/). By working together, we can build a stable and satisfied workforce that contributes to the long-term success of both employers and employees.
