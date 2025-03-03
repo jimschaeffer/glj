@@ -114,16 +114,16 @@
           entry.children.length %} {# If this page is a dropdown, give it the
           appropriate classes, icons and accessibility attributes#}
           <li
-            class="cs-li {% if hasChild %} cs-dropdown {% endif %}"
-            {%
-            if
-            hasChild
-            %}
-            tabindex="0"
-            {%
-            endif
-            %}
-          >
+  class="cs-li {% if hasChild %} cs-dropdown {% endif %} {% if entry.data.eleventyNavigation.showOn == 'mobile' %} mobile-only {% elif entry.data.eleventyNavigation.showOn == 'desktop' %} desktop-only {% endif %}"
+  {%
+  if
+  hasChild
+  %}
+  tabindex="0"
+  {%
+  endif
+  %}
+>
             {# Similarly, if the link is active, apply the necessary classes #}
             {% if entry.url %}
             <a
@@ -176,7 +176,8 @@
         </ul>
       </div>
     </nav>
-    <a href="/jobs" class="cs-button-solid cs-nav-button">Access Job Portal</a>
+    <a href="/jobs" class="cs-button-solid cs-nav-button">Search Jobs</a>
+    <a href="/contact" class="cs-button-solid cs-nav-button-2">Request Talent</a>
     <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
     <button id="dark-mode-toggle" aria-label="dark mode toggle">
       <svg
