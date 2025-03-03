@@ -1571,13 +1571,14 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #meet-team-1677 {
+  #meet-team-1703 {
     padding: var(--sectionPadding);
     overflow: hidden;
   }
-  #meet-team-1677 .cs-container {
+  #meet-team-1703 .cs-container {
     width: 100%;
-    max-width: 80rem;
+    /* changes to 1280px at tablet */
+    max-width: 34.375rem;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -1585,151 +1586,123 @@
     /* 48px - 64px */
     gap: clamp(3rem, 6vw, 4rem);
   }
-  #meet-team-1677 .cs-content {
+  #meet-team-1703 .cs-content {
     text-align: left;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
-  #meet-team-1677 .cs-title {
-    margin: 0;
-    max-width: 23ch;
-  }
-  #meet-team-1677 .cs-card-group {
+  #meet-team-1703 .cs-card-group {
     width: 100%;
+    max-width: 56.9375rem;
     margin: 0;
     padding: 0;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    /* 20px - 40px */
-    column-gap: clamp(1.25rem, 1.9vw, 2.5rem);
-    /* 24px - 40px */
+    /* 16px - 20px */
+    column-gap: clamp(1rem, 2vw, 1.5rem);
     row-gap: clamp(1.5rem, 3vw, 2.5rem);
   }
-  #meet-team-1677 .cs-item {
+  #meet-team-1703 .cs-item {
     list-style: none;
     width: 100%;
     display: flex;
     grid-column: span 12;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    position: relative;
-    gap: 1rem;
+    align-items: flex-start;
   }
-  #meet-team-1677 .cs-item:hover {
-    cursor: pointer;
-  }
-  #meet-team-1677 .cs-item:hover .cs-link {
-    opacity: 1;
-  }
-  #meet-team-1677 .cs-item:hover .cs-name {
-    color: var(--primary);
-  }
-  #meet-team-1677 .cs-item:hover .cs-picture:after {
-    opacity: 1;
-  }
-  #meet-team-1677 .cs-item:hover .cs-picture img {
+  #meet-team-1703 .cs-item:hover .cs-picture img {
     transform: scale(1.1);
   }
-  #meet-team-1677 .cs-picture {
+  #meet-team-1703 .cs-item:hover .cs-name {
+    color: var(--primary);
+  }
+  #meet-team-1703 .cs-job {
+    font-size: 1rem;
+    line-height: 1em;
+    color: var(--bodyTextColor);
+    display: block;
+  }
+  #meet-team-1703 .cs-picture {
     width: 100%;
     /* 300px - 380px */
-    height: clamp(18.75rem, 35vw, 23.75rem);
-    /* clips img tag from overflowing it on hover */
+    height: clamp(18.75rem, 70vw, 23.75rem);
+    margin: 0;
     overflow: hidden;
     display: block;
     position: relative;
     z-index: 1;
   }
-  #meet-team-1677 .cs-picture:after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(0deg, #000 0%, rgba(0, 0, 0, 0) 39.89%);
-    opacity: 0;
+  #meet-team-1703 .cs-picture img {
     position: absolute;
-    display: block;
     top: 0;
     left: 0;
-    transition: opacity 0.3s;
-  }
-  #meet-team-1677 .cs-picture img {
+    /* makes sure the top of the image is at the top of the parent, heads won't get cut off this way */
+    object-position: top;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* makes sure the top of the image is at the top of the parent, heads won't get cut off this way */
-    object-position: top;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
     transition: transform 0.7s;
   }
-  #meet-team-1677 .cs-info {
+  #meet-team-1703 .cs-info {
     width: 100%;
+    padding: 0;
+    /* prevents padding and border from affecting height and width */
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    position: relative;
-    gap: 0.25rem;
+    gap: 0.75rem;
   }
-  #meet-team-1677 .cs-name {
+  #meet-team-1703 .cs-name {
     font-size: 1.25rem;
     line-height: 1.2em;
     font-weight: 700;
-    margin: 0;
+    margin: 1rem 0 0 0;
     color: var(--headerColor);
     display: block;
+    transition: color 0.3s;
   }
-  #meet-team-1677 .cs-job {
-    font-size: 1rem;
-    line-height: 1.5em;
-    color: var(--bodyTextColor);
-    display: block;
-  }
-  #meet-team-1677 .cs-link {
-    gap: 0.5rem;
-    position: absolute;
-    right: 0.5rem;
-    bottom: 4.5rem;
-    z-index: 1;
-    padding: 0.5rem;
-    opacity: 0;
-    border-radius: 50%;
+  #meet-team-1703 .cs-social {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    gap: 0.75rem;
   }
-  #meet-team-1677 .cs-icon {
-    width: 1.5rem;
-    height: 1.5rem;
-  }
-}
-/* Tablet - 500px */
-@media only screen and (min-width: 31.25rem) {
-  #meet-team-1677 .cs-item {
-    grid-column: span 6;
+  #meet-team-1703 .cs-link-icon {
+    width: 1rem;
+    height: auto;
   }
 }
-/* Small Desktop - 850px */
-@media only screen and (min-width: 53.125rem) {
-  #meet-team-1677 .cs-item {
-    grid-column: span 3;
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #meet-team-1703 .cs-container {
+    max-width: 80rem;
+  }
+  #meet-team-1703 .cs-item {
+    grid-column: span 4;
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #meet-team-1703 .cs-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  #meet-team-1703 .cs-card-group {
+    width: 65vw;
+    flex: none;
   }
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #meet-team-1677 {
-    background-color: var(--dark);
-  }
-  body.dark-mode #meet-team-1677 .cs-title,
-  body.dark-mode #meet-team-1677 .cs-name,
-  body.dark-mode #meet-team-1677 .cs-job {
+  body.dark-mode #meet-team-1703 .cs-title,
+  body.dark-mode #meet-team-1703 .cs-text,
+  body.dark-mode #meet-team-1703 .cs-name,
+  body.dark-mode #meet-team-1703 .cs-job {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #meet-team-1677 .cs-job {
+  body.dark-mode #meet-team-1703 .cs-job {
     opacity: 0.8;
   }
 }

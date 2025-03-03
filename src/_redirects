@@ -1,4 +1,5 @@
 # Redirect specific paths to new URLs
+/services                                   /skilled-labor-staffing
 /en/services                                /skilled-labor-staffing
 /en/employers                               /about
 /en/about-us                                /about
