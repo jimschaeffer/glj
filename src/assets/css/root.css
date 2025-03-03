@@ -106,6 +106,66 @@
   .cs-button-solid:hover:before {
     width: 100%;
   }
+  .cs-button-solid-2 {
+    font-size: 1rem;
+    font-weight: 700;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-align: center;
+    text-decoration: none;
+    min-width: 9.375rem;
+    margin: 0;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+    padding: 0 1.5rem;
+    color: #1a1a1a;
+    background-color: var(--primary);
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s;
+    color: var(--primary);
+    background-color: transparent;
+    border: 2px solid var(--primary);
+  }
+  .cs-button-solid-2:before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    background: #000;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+  }
+  .cs-button-solid-2:hover {
+    color: #fff;
+  }
+  .cs-button-solid-2:hover:before {
+    width: 100%;
+  }
+  .cs-button-solid-2:hover {
+    background-color: var(--primary);
+    color: #fff;
+    border-color: transparent;
+  }
+  .cs-button-solid-2:hover:before {
+    display: none;
+  }
+  .cs-hide-on-mobile {
+    display: none;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  .cs-hide-on-mobile {
+    display: block;
+  }
+  .cs-hide-on-desktop {
+    display: none;
+  }
 }
 /* Fonts and general styles */
 @media only screen and (min-width: 0em) {
