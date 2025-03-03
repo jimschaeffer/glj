@@ -80,7 +80,7 @@
     </div>
     <!-- Links -->
     <div class="cs-ul-wrapper">
-      <span class="cs-header">Quick Links</span>
+      <span class="cs-header">Sitemap</span>
       <ul class="cs-ul">
         {% set navPages = collections.all | eleventyNavigation %} {% for entry
         in navPages %}
@@ -88,6 +88,45 @@
           <a href="{{ entry.url }}" class="cs-link">{{ entry.key }}</a>
         </li>
         {% endfor %}
+      </ul>
+    </div>
+    <div class="cs-ul-wrapper">
+      <span class="cs-header">Staffing</span>
+      <ul class="cs-ul">
+        <li class="cs-li">
+          <a href="/manufacturing-staffing-solutions" class="cs-link"
+            >Manufacturing</a
+          >
+        </li>
+        <li class="cs-li">
+          <a href="/skill-trade-staffing-solutions" class="cs-link"
+            >Skill Trade</a
+          >
+        </li>
+        <li class="cs-li">
+          <a href="/general-labor-staffing-solutions" class="cs-link"
+            >General Labor</a
+          >
+        </li>
+        <li class="cs-li">
+          <a href="/direct-hire-staffing-services" class="cs-link"
+            >Direct Hire Services</a
+          >
+        </li>
+        <li class="cs-li">
+          <a href="/temporary-workforce-solutions" class="cs-link"
+            >Temporary Staffing</a
+          >
+        </li>
+        <li class="cs-li">
+          <a href="/" class="cs-link">Payroll & Compliance</a>
+        </li>
+        <li class="cs-li">
+          <a href="/hvac-staffing-solutions" class="cs-link">HVAC</a>
+        </li>
+        <li class="cs-li">
+          <a href="/welding-staffing-services" class="cs-link">Welding</a>
+        </li>
       </ul>
     </div>
     <div class="cs-ul-wrapper">

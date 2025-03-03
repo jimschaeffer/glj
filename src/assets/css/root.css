@@ -1561,7 +1561,7 @@
   #cs-footer-1340 .cs-container {
     max-width: 80rem;
     /* 48px - 120px */
-    column-gap: clamp(3rem, 8vw, 7.5rem);
+    column-gap: clamp(3rem, 8vw, 4rem);
     flex-wrap: nowrap;
   }
   #cs-footer-1340 .cs-logo-group {
