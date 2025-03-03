@@ -926,7 +926,7 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
   body.dark-mode #steps-1675 .cs-topper {
-    color: var(--primaryLight);
+    color: var(--primary);
   }
   body.dark-mode #steps-1675 .cs-title {
     color: var(--bodyTextColorWhite);
@@ -944,7 +944,7 @@
   }
   body.dark-mode #steps-1675 .cs-h3,
   body.dark-mode #steps-1675 .cs-number {
-    color: var(--primaryLight);
+    color: var(--primary);
   }
 }
 /*-- -------------------------- -->

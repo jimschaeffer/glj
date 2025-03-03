@@ -35,7 +35,7 @@ We leverage the latest in recruitment technology to enhance our proprietary recr
 
 ## Preparing for the Future
 
-The future of work is here, and it demands agility, flexibility, and innovation. At Good Labor Jobs, [we're committed to providing comprehensive support services](../../services), from career counseling and professional development to ongoing support post-placement and [reducing employee turnover](https://goodlaborjobs.com/blog/reducing-employee-turnover/). Our mission is to not only meet the current needs of the job market but to anticipate future trends, ensuring that we're always ready to help our clients and candidates succeed.
+The future of work is here, and it demands agility, flexibility, and innovation. At Good Labor Jobs, [we're committed to providing comprehensive support services](../../skilled-labor-staffing), from career counseling and professional development to ongoing support post-placement and [reducing employee turnover](https://goodlaborjobs.com/blog/reducing-employee-turnover/). Our mission is to not only meet the current needs of the job market but to anticipate future trends, ensuring that we're always ready to help our clients and candidates succeed.
 
 ## A Partner in Your Career Journey
 
