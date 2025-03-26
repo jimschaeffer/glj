@@ -38,7 +38,7 @@ This workforce solution operates at scale. In Branson, Missouri, alone, approxim
 
 Without reliable staffing solutions like these, hospitality businesses face difficult choices—33% report they would need to close or significantly reduce operations if they couldn't secure enough workers. As travel continues rebounding and demand grows, Puerto Rican talent represents not just a temporary fix but a sustainable staffing strategy that strengthens both businesses and communities.
 
-A Straightforward Staffing Solution Without Visa Complications
+## A Straightforward Staffing Solution Without Visa Complications
 
 The most immediate advantage of working with Puerto Rican talent is the complete absence of visa complications. As U.S. citizens, Puerto Rican workers require:
 
@@ -47,8 +47,6 @@ The most immediate advantage of working with Puerto Rican talent is the complete
 * No work duration limitations
 * No costly application fees
 * No uncertainty about approval timing
-
-
 
 ![](/assets/images/blog/li-newsletter-quotes-2-.png)
 
